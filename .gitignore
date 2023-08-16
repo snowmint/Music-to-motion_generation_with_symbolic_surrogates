@@ -1,0 +1,9 @@
+/UoE_violin_midi/*
+*.tar
+*.mp4
+*.wav
+*.jpg
+/model_save/*
+/output_eval/*
+/output_prediction/*
+/BWV1001/*
