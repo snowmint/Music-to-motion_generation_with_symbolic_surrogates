@@ -3,6 +3,7 @@
 *.mp4
 *.wav
 *.jpg
+*.pkl
 /model_save/*
 /output_eval/*
 /output_prediction/*
