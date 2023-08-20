@@ -287,7 +287,7 @@ class AudioMotionValDataSet(Dataset):
         self.read_data["audio"] = []
         self.read_data["motion"] = []
         self.dataset_len = 0
-        self.max_len = 6706
+        self.max_len = 8952
 
         with open(file_list_txt, 'r') as file:
             lines = file.readlines()
@@ -418,7 +418,7 @@ class AllValDataSet(Dataset):
         self.read_data["all"] = []
         self.read_data["motion"] = []
         self.dataset_len = 0
-        self.max_len = 6706
+        self.max_len = 8952
 
         with open(file_list_txt, 'r') as file:
             lines = file.readlines()

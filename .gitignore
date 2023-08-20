@@ -4,6 +4,7 @@
 *.wav
 *.jpg
 *.pkl
+*.zip
 /model_save/*
 /output_eval/*
 /output_prediction/*
