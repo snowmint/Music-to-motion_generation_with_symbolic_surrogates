@@ -5,6 +5,7 @@
 *.jpg
 *.pkl
 *.zip
+*.sf2
 /model_save/*
 /output_eval/*
 /output_prediction/*

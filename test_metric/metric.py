@@ -16,6 +16,12 @@ def L1_loss(pred, target, mask):
     masked_out = out * mask
     return torch.mean(masked_out)
 
+def L2_loss(pred, target, mask):
+    square_diff = torch.square(pred - target)
+    out = torch.sum(square_diff, 2, keepdim=True)
+    masked_out = out * mask
+    return torch.mean(masked_out)
+
 def compute_pck(pred, gt, alpha=0.1):
     """
     https://github.com/amirbar/speech2gesture/blob/master/common/evaluation.py

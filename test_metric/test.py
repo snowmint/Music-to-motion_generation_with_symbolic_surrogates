@@ -80,8 +80,8 @@ def main():
                 eval_data_input.close()
                 # print(eval_datas.shape)
 
-                l1 = []
-                l1_hand = []
+                l2 = []
+                l2_hand = []
                 pck_01 = []
                 pck_02 = []
                 bow = []
@@ -116,8 +116,8 @@ def main():
                     # print("pred[:, 11:12, :]:", np.squeeze(pred[:, 11:12, :], axis=1).shape)
                     # print("targ[:, 11:12, :]:", np.squeeze(targ[:, 11:12, :], axis=1).shape)
                     
-                    v_l1 = np.mean(abs(pred - targ))
-                    v_l1_hand = np.mean(abs(pred[:, 8:13, :] - targ[:, 8:13, :])) #8~12->right hand
+                    v_l2 = np.mean(np.square(pred - targ))
+                    v_l2_hand = np.mean(np.square(pred[:, 8:13, :] - targ[:, 8:13, :])) #8~12->right hand
                     v_pck_01 = compute_pck(pred, targ, alpha=0.1)
                     v_pck_02 = compute_pck(pred, targ, alpha=0.2)
                     pred_rh_wrist = np.squeeze(pred[:, 11:12, :], axis=1)
@@ -125,8 +125,8 @@ def main():
                     v_bow_acc = bowing_acc(pred_rh_wrist, targ_rh_wrist, alpha=3) # only take right-hand wrist keypoints to calculate bowing attack accuracy
                     v_cosine = np.mean(cosine_similarity(pred_rh_wrist, targ_rh_wrist))
         
-                    l1.append(v_l1)
-                    l1_hand.append(v_l1_hand)
+                    l2.append(v_l2)
+                    l2_hand.append(v_l2_hand)
                     pck_01.append(v_pck_01)
                     pck_02.append(v_pck_02)
                     bowx.append(v_bow_acc[0])
@@ -145,8 +145,8 @@ def main():
                 # print(data_type + "_" + file_code + ' Avg_Bowing_Attack_accuracy: %f' %np.mean(bow))
                 # print(data_type + "_" + file_code + ' Avg_Cosine_Similarity: %f' %np.mean(cosine))
                 
-                test_result[data_type][file_code]["Avg_L1_loss"] = np.mean(l1)
-                test_result[data_type][file_code]["Avg_L1_hand_loss"] = np.mean(l1_hand)
+                test_result[data_type][file_code]["Avg_L2_loss"] = np.mean(l2)
+                test_result[data_type][file_code]["Avg_L2_hand_loss"] = np.mean(l2_hand)
                 test_result[data_type][file_code]["Avg_Pck"] = avg_pck
                 test_result[data_type][file_code]["Avg_Bowing_Attack_accuracyX"] = np.mean(bowx)
                 test_result[data_type][file_code]["Avg_Bowing_Attack_accuracyY"] = np.mean(bowy)
