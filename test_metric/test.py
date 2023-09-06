@@ -115,8 +115,9 @@ def main():
                 eval_data_input = open(this_dir+matching[0], 'rb')
                 eval_datas = pickle.load(eval_data_input)
                 eval_data_input.close()
-                print(eval_datas.shape)
-                eval_datas_all = eval_datas[0]
+                # eval_datas = np.asarray(eval_datas)
+                print("eval_datas.shape", eval_datas.shape)
+                eval_datas_all = eval_datas
 
                 l2 = []
                 l2_hand = []
@@ -131,15 +132,18 @@ def main():
 
                 for idx, eval_data in enumerate(eval_datas_all):
                     print(idx)
-                    print(eval_data.shape)
-                    require_len = len(gt_data_list[idx])
-                    print(require_len)
-                    eval_data_cut = eval_data[:require_len, :102]
-                    print(eval_data_cut.shape)
+                    print("eval_data:", eval_data.shape)
+                    require_len = min(len(gt_data_list[idx]), len(eval_data))
+                    # require_len = len(gt_data_list[idx])
+                    print("require_len", require_len)
+                    eval_data_cut = eval_data[:require_len].copy()
+                    print(eval_data[:require_len].copy().shape)
+                    print("eval_data_cut:", eval_data_cut.shape)
 
-                    pred = eval_data_cut
-                    targ = gt_data_list[idx][:, :102]
-                    print(targ.shape)
+                    pred = eval_data_cut[:, :102]
+                    targ = gt_data_list[idx][:require_len, :102].copy()
+                    print("pred", pred.shape)
+                    print("targ", targ.shape)
                     assert pred.shape == targ.shape
 
                     v_fd = calculate_fid(pred, targ)
