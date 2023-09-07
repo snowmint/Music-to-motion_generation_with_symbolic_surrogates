@@ -22,13 +22,13 @@
 /* Style the submit button */
 .form-inline button {
   padding: 10px 20px;
-  background-color: dodgerblue;
+  background-color: rgb(113, 110, 198);
   border: 1px solid #ddd;
   color: white;
 }
 
 .form-inline button:hover {
-  background-color: royalblue;
+  background-color: rgb(69, 94, 169);
 }
 
 /* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */

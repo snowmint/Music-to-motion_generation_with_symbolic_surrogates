@@ -1,0 +1,53 @@
+table.striped-columns tbody td:nth-of-type(even),
+table.striped-columns th:nth-of-type(even) {
+  background: rgb(222, 233, 251);
+  border: 1px solid rgb(178, 193, 214);
+}
+
+table.striped-columns tbody td:nth-of-type(odd),
+table.striped-columns th:nth-of-type(odd) {
+  border: 1px solid rgb(178, 193, 214);
+}
+
+table.border {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid rgb(178, 193, 214);
+}
+
+table.border td,
+table.border th {
+  border: 1px solid rgb(178, 193, 214);
+  padding: 5px;
+  text-align: middle;
+}
+
+table.video-table {
+  float: left;
+  width: 300px;
+
+}
+
+/* Dotted border */
+hr.dotted {
+  border-top: 3px dotted #bbb;
+}
+
+textarea {
+  width: 100%;
+}
+
+.btn {
+  background-color: rgb(54, 57, 92);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  min-height: 30px;
+  min-width: 120px;
+}
+
+.survey-group {
+  margin-top: auto;
+  margin-left: auto;
+}
