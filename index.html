@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+          margin:0;
+          /*background: rgb(252,252,252);*/
+          /*background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);*/
+          background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+          /*background-image: linear-gradient(to left top, #ffd8ee, #f6d3f2, #ebd0f6, #dccdfb, #c9cbfe, #bad0ff, #acd6ff, #a0daff, #9fe4ff, #a3eeff, #acf7fd, #b8fffa);*/
+          /*background-image: linear-gradient(to bottom, #ffffff, #f0f0f8, #e0e1f2, #ced3ec, #bbc6e6, #aebbde, #a0b1d7, #92a7cf, #889dc4, #7e93b9, #758aaf, #6b80a4);*/
+          /*background-image: linear-gradient(to bottom, #ffffff, #eeedfa, #dadcf5, #c5cbf1, #acbced, #9db2e5, #8fa8de, #7f9ed6, #7a96c9, #758fbd, #7087b0, #6b80a4);*/
+      }
+      a,a:link,a:visited{
+          color:#445470;
+          text-decoration: none;
+      }
+      a:hover{
+          color:#7a5300;
+          text-decoration: none;
+      }
+      a:active{
+          color:#CFBFEF;
+          text-decoration: none;
+      }
+      
+
+      table{
+        border-style:none;
+        border-radius: 90px;
+      }
+      table a
+      {
+        display:block;
+        text-decoration:none;
+      }
+      table td:hover{
+        background-color: #FFFFFF;
+        color: #ae93ba;
+        box-shadow: 3px 3px 15px #98a3b8;
+      }
+      td{
+        margin-right: 10px;
+        padding: 10px 14px;
+        border-radius: 50px;
+        background-color: #ffffff99;
+        color: #FFF;
+        box-shadow: 3px 3px 15px #e3e3e3;
+      }
+    </style>
+  </head>
+  <body>
+   <br>
+    <h2 align="center" style="color:#4a6591;">Music to Body-movement generation</h2>
+    <h3 align="center" style="color:#4a6591;">autumn 2023</h3>
+    <!--h4 align="center" style="color:#4a6591;">contact me with <a href="mailto:starlitsky0612@gmail.com">starlitsky0612@gmail.com</a></h4-->
+    <br>
+    <div align="center">
+      <p style="font-size: 20px;color:#4a6591;"><b>1. Audio as training input</b></p>
+      <br/>
+      <table width="600" height="380" cellspacing="30px">
+         <tr>
+          <td rowspan="2" style="text-align:center;padding-bottom: 10px;"><iframe width="375" height="250" style="border-radius: 30pt" src="https://www.youtube.com/embed/fx5K96VnQOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>MSE-loss<br/>[Validation set] Elgar salut d'amour</a></td>
+          <td rowspan="2" style="text-align:center;padding-bottom: 10px;"><iframe width="375" height="250" style="border-radius: 30pt" src="https://www.youtube.com/embed/fx5K96VnQOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>MSE-loss<br/>[Validation set] 雨夜花</a></td>
+          <td rowspan="2" style="text-align:center;padding-bottom: 10px;"><iframe width="375" height="250" style="border-radius: 30pt" src="https://www.youtube.com/embed/fx5K96VnQOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>MSE-loss<br/>[Test set] BWV1001 Adagio</a></td>
+        </tr>
+      </table>
+
+      <table width="600" height="380" cellspacing="30px">
+         <tr>
+          <td rowspan="2" style="text-align:center;padding-bottom: 10px;"><iframe width="375" height="250" style="border-radius: 30pt" src="https://www.youtube.com/embed/fx5K96VnQOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>New(Time-wise + Dim-wise + MSE)-loss<br/>[Validation set] Elgar salut d'amour</a></td>
+          <td rowspan="2" style="text-align:center;padding-bottom: 10px;"><iframe width="375" height="250" style="border-radius: 30pt" src="https://www.youtube.com/embed/fx5K96VnQOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>New(Time-wise + Dim-wise + MSE)-loss<br/>[Validation set] 雨夜花</a></td>
+          <td rowspan="2" style="text-align:center;padding-bottom: 10px;"><iframe width="375" height="250" style="border-radius: 30pt" src="https://www.youtube.com/embed/fx5K96VnQOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>New(Time-wise + Dim-wise + MSE)-loss<br/>[Test set] BWV1001 Adagio</a></td>
+        </tr>
+      </table>
+      <p style="font-size: 20px;color:#4a6591;"><b>2. MIDI as training input</b></p>
+      <br/>
+      <table width="600" height="380" cellspacing="30px">
+         <tr>
+          <td rowspan="2" style="text-align:center;padding-bottom: 10px;"><iframe width="375" height="250" style="border-radius: 30pt" src="https://www.youtube.com/embed/fx5K96VnQOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>MSE-loss<br/>[Validation set] Elgar salut d'amour</a></td>
+          <td rowspan="2" style="text-align:center;padding-bottom: 10px;"><iframe width="375" height="250" style="border-radius: 30pt" src="https://www.youtube.com/embed/fx5K96VnQOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>MSE-loss<br/>[Validation set] 雨夜花</a></td>
+          <td rowspan="2" style="text-align:center;padding-bottom: 10px;"><iframe width="375" height="250" style="border-radius: 30pt" src="https://www.youtube.com/embed/fx5K96VnQOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>MSE-loss<br/>[Test set] BWV1001 Adagio</a></td>
+        </tr>
+      </table>
+
+      <table width="600" height="380" cellspacing="30px">
+         <tr>
+          <td rowspan="2" style="text-align:center;padding-bottom: 10px;"><iframe width="375" height="250" style="border-radius: 30pt" src="https://www.youtube.com/embed/fx5K96VnQOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>New(Time-wise + Dim-wise + MSE)-loss<br/>[Validation set] Elgar salut d'amour</a></td>
+          <td rowspan="2" style="text-align:center;padding-bottom: 10px;"><iframe width="375" height="250" style="border-radius: 30pt" src="https://www.youtube.com/embed/fx5K96VnQOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>New(Time-wise + Dim-wise + MSE)-loss<br/>[Validation set] 雨夜花</a></td>
+          <td rowspan="2" style="text-align:center;padding-bottom: 10px;"><iframe width="375" height="250" style="border-radius: 30pt" src="https://www.youtube.com/embed/fx5K96VnQOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>New(Time-wise + Dim-wise + MSE)-loss<br/>[Test set] BWV1001 Adagio</a></td>
+        </tr>
+      </table>
+      <p style="font-size: 20px;color:#4a6591;"><b>3. MIDI and Audio both as training input</b></p>
+      <br/>
+      <table width="600" height="380" cellspacing="30px">
+          <tr>
+          <td rowspan="2" style="text-align:center;padding-bottom: 10px;"><iframe width="375" height="250" style="border-radius: 30pt" src="https://www.youtube.com/embed/fx5K96VnQOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>MSE-loss<br/>[Validation set] Elgar salut d'amour</a></td>
+          <td rowspan="2" style="text-align:center;padding-bottom: 10px;"><iframe width="375" height="250" style="border-radius: 30pt" src="https://www.youtube.com/embed/fx5K96VnQOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>MSE-loss<br/>[Validation set] 雨夜花</a></td>
+          <td rowspan="2" style="text-align:center;padding-bottom: 10px;"><iframe width="375" height="250" style="border-radius: 30pt" src="https://www.youtube.com/embed/fx5K96VnQOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>MSE-loss<br/>[Test set] BWV1001 Adagio</a></td>
+        </tr>
+      </table>
+
+      <table width="600" height="380" cellspacing="30px">
+          <tr>
+          <td rowspan="2" style="text-align:center;padding-bottom: 10px;"><iframe width="375" height="250" style="border-radius: 30pt" src="https://www.youtube.com/embed/fx5K96VnQOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>New(Time-wise + Dim-wise + MSE)-loss<br/>[Validation set] Elgar salut d'amour</a></td>
+          <td rowspan="2" style="text-align:center;padding-bottom: 10px;"><iframe width="375" height="250" style="border-radius: 30pt" src="https://www.youtube.com/embed/fx5K96VnQOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>New(Time-wise + Dim-wise + MSE)-loss<br/>[Validation set] 雨夜花</a></td>
+          <td rowspan="2" style="text-align:center;padding-bottom: 10px;"><iframe width="375" height="250" style="border-radius: 30pt" src="https://www.youtube.com/embed/fx5K96VnQOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>New(Time-wise + Dim-wise + MSE)-loss<br/>[Test set] BWV1001 Adagio</a></td>
+        </tr>
+      </table>
+      <p style="font-size: 20px;color:#4a6591;"><b>Ground Truth</b></p>
+      <br/>
+      <table width="600" height="380" cellspacing="30px">
+         <tr>
+          <td rowspan="2" style="text-align:center;padding-bottom: 10px;"><iframe width="375" height="250" style="border-radius: 30pt" src="https://www.youtube.com/embed/fx5K96VnQOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>[Validation set] Elgar salut d'amour</a></td>
+          <td rowspan="2" style="text-align:center;padding-bottom: 10px;"><iframe width="375" height="250" style="border-radius: 30pt" src="https://www.youtube.com/embed/fx5K96VnQOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>[Validation set] 雨夜花</a></td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+    </div>
+  </body>
+</html>
