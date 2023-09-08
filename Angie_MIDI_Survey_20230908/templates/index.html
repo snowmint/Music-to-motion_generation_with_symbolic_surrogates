@@ -63,7 +63,7 @@
             <div class="panel-heading" style="font-size: 24px;"><b>訓練成果問卷</b></div>
             <div class="panel-body">
                 <p>以下為使用不在訓練資料中的音樂資料作為輸入，使模型預測肢體座標，並繪製出拉奏小提琴的肢體動作影片。<br/>
-                    分成三個區塊，分別是使用三首樂曲——雨夜花、愛的禮讚以及 BWV1001 第一樂章進行預測。<br/>
+                    分成四個區塊，分別是使用四首樂曲——雨夜花、愛的禮讚、BWV1001第一樂章以及 BWV1001第二樂章進行預測。<br/>
                     請依自己主觀的看法來選擇影片右方四個問題的符合程度，使用 7 個等級的李克特量表進行評分。<br/></p>
                 <p>最低 1 分為最不符合，最高 7 分為最符合。</p>
                 <p>
@@ -73,142 +73,6 @@
                 
                 <div class="survey-group" id="surveyblock">
                     <p style="font-size: 20px;"><b>1. 雨夜花</b></p>
-                    <table class="video-table">
-                        <tr>
-                            <td>
-                                <iframe width="250" height="165" src="https://www.youtube.com/embed/EesSqgAPN54"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
-                            </td>
-                        </tr>
-                    </table>
-                    <table class="striped-columns border">
-                        <thead>
-                            <tr>
-                                <th>1=最不符合; 7=最符合</th>
-                                <th>1</th>
-                                <th>2</th>
-                                <th>3</th>
-                                <th>4</th>
-                                <th>5</th>
-                                <th>6</th>
-                                <th>7</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>肢體動作的穩定度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="midi_new_flower_stability" /></td>
-                                <td><input type="radio" value="2" name="midi_new_flower_stability" /></td>
-                                <td><input type="radio" value="3" name="midi_new_flower_stability" /></td>
-                                <td><input type="radio" value="4" name="midi_new_flower_stability" /></td>
-                                <td><input type="radio" value="5" name="midi_new_flower_stability" /></td>
-                                <td><input type="radio" value="6" name="midi_new_flower_stability" /></td>
-                                <td><input type="radio" value="7" name="midi_new_flower_stability" /></td>
-                            </tr>
-                            <tr>
-                                <td>肢體動作的流暢度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="midi_new_flower_smoothness" /></td>
-                                <td><input type="radio" value="2" name="midi_new_flower_smoothness" /></td>
-                                <td><input type="radio" value="3" name="midi_new_flower_smoothness" /></td>
-                                <td><input type="radio" value="4" name="midi_new_flower_smoothness" /></td>
-                                <td><input type="radio" value="5" name="midi_new_flower_smoothness" /></td>
-                                <td><input type="radio" value="6" name="midi_new_flower_smoothness" /></td>
-                                <td><input type="radio" value="7" name="midi_new_flower_smoothness" /></td>
-                            </tr>
-                            <tr>
-                                <td>肢體動作的真實度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="midi_new_flower_real" /></td>
-                                <td><input type="radio" value="2" name="midi_new_flower_real" /></td>
-                                <td><input type="radio" value="3" name="midi_new_flower_real" /></td>
-                                <td><input type="radio" value="4" name="midi_new_flower_real" /></td>
-                                <td><input type="radio" value="5" name="midi_new_flower_real" /></td>
-                                <td><input type="radio" value="6" name="midi_new_flower_real" /></td>
-                                <td><input type="radio" value="7" name="midi_new_flower_real" /></td>
-                            </tr>
-                            <tr>
-                                <td>肢體動作與音樂相呼應的程度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="midi_new_flower_similarity" /></td>
-                                <td><input type="radio" value="2" name="midi_new_flower_similarity" /></td>
-                                <td><input type="radio" value="3" name="midi_new_flower_similarity" /></td>
-                                <td><input type="radio" value="4" name="midi_new_flower_similarity" /></td>
-                                <td><input type="radio" value="5" name="midi_new_flower_similarity" /></td>
-                                <td><input type="radio" value="6" name="midi_new_flower_similarity" /></td>
-                                <td><input type="radio" value="7" name="midi_new_flower_similarity" /></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <br/>
-
-                    <table class="video-table">
-                        <tr>
-                            <td>
-                                <iframe width="250" height="165" src="https://www.youtube.com/embed/5Y48O8z1u-4"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
-                            </td>
-                        </tr>
-                    </table>
-                    <table class="striped-columns border">
-                        <thead>
-                            <tr>
-                                <th>1=最不符合; 7=最符合</th>
-                                <th>1</th>
-                                <th>2</th>
-                                <th>3</th>
-                                <th>4</th>
-                                <th>5</th>
-                                <th>6</th>
-                                <th>7</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>肢體動作的穩定度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="both_mse_flower_stability" /></td>
-                                <td><input type="radio" value="2" name="both_mse_flower_stability" /></td>
-                                <td><input type="radio" value="3" name="both_mse_flower_stability" /></td>
-                                <td><input type="radio" value="4" name="both_mse_flower_stability" /></td>
-                                <td><input type="radio" value="5" name="both_mse_flower_stability" /></td>
-                                <td><input type="radio" value="6" name="both_mse_flower_stability" /></td>
-                                <td><input type="radio" value="7" name="both_mse_flower_stability" /></td>
-                            </tr>
-                            <tr>
-                                <td>肢體動作的流暢度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="both_mse_flower_smoothness" /></td>
-                                <td><input type="radio" value="2" name="both_mse_flower_smoothness" /></td>
-                                <td><input type="radio" value="3" name="both_mse_flower_smoothness" /></td>
-                                <td><input type="radio" value="4" name="both_mse_flower_smoothness" /></td>
-                                <td><input type="radio" value="5" name="both_mse_flower_smoothness" /></td>
-                                <td><input type="radio" value="6" name="both_mse_flower_smoothness" /></td>
-                                <td><input type="radio" value="7" name="both_mse_flower_smoothness" /></td>
-                            </tr>
-                            <tr>
-                                <td>肢體動作的真實度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="both_mse_flower_real" /></td>
-                                <td><input type="radio" value="2" name="both_mse_flower_real" /></td>
-                                <td><input type="radio" value="3" name="both_mse_flower_real" /></td>
-                                <td><input type="radio" value="4" name="both_mse_flower_real" /></td>
-                                <td><input type="radio" value="5" name="both_mse_flower_real" /></td>
-                                <td><input type="radio" value="6" name="both_mse_flower_real" /></td>
-                                <td><input type="radio" value="7" name="both_mse_flower_real" /></td>
-                            </tr>
-                            <tr>
-                                <td>肢體動作與音樂相呼應的程度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="both_mse_flower_similarity" /></td>
-                                <td><input type="radio" value="2" name="both_mse_flower_similarity" /></td>
-                                <td><input type="radio" value="3" name="both_mse_flower_similarity" /></td>
-                                <td><input type="radio" value="4" name="both_mse_flower_similarity" /></td>
-                                <td><input type="radio" value="5" name="both_mse_flower_similarity" /></td>
-                                <td><input type="radio" value="6" name="both_mse_flower_similarity" /></td>
-                                <td><input type="radio" value="7" name="both_mse_flower_similarity" /></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <br/>
-
                     <table class="video-table">
                         <tr>
                             <td>
@@ -272,6 +136,142 @@
                                 <td><input type="radio" value="5" name="audio_new_flower_similarity" /></td>
                                 <td><input type="radio" value="6" name="audio_new_flower_similarity" /></td>
                                 <td><input type="radio" value="7" name="audio_new_flower_similarity" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br/>
+
+                    <table class="video-table">
+                        <tr>
+                            <td>
+                                <iframe width="250" height="165" src="https://www.youtube.com/embed/e_srm2xrs_w"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="striped-columns border">
+                        <thead>
+                            <tr>
+                                <th>1=最不符合; 7=最符合</th>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                                <th>7</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>肢體動作的穩定度<span style="color:red;">*</span></td>
+                                <td><input type="radio" value="1" name="both_new_flower_stability" /></td>
+                                <td><input type="radio" value="2" name="both_new_flower_stability" /></td>
+                                <td><input type="radio" value="3" name="both_new_flower_stability" /></td>
+                                <td><input type="radio" value="4" name="both_new_flower_stability" /></td>
+                                <td><input type="radio" value="5" name="both_new_flower_stability" /></td>
+                                <td><input type="radio" value="6" name="both_new_flower_stability" /></td>
+                                <td><input type="radio" value="7" name="both_new_flower_stability" /></td>
+                            </tr>
+                            <tr>
+                                <td>肢體動作的流暢度<span style="color:red;">*</span></td>
+                                <td><input type="radio" value="1" name="both_new_flower_smoothness" /></td>
+                                <td><input type="radio" value="2" name="both_new_flower_smoothness" /></td>
+                                <td><input type="radio" value="3" name="both_new_flower_smoothness" /></td>
+                                <td><input type="radio" value="4" name="both_new_flower_smoothness" /></td>
+                                <td><input type="radio" value="5" name="both_new_flower_smoothness" /></td>
+                                <td><input type="radio" value="6" name="both_new_flower_smoothness" /></td>
+                                <td><input type="radio" value="7" name="both_new_flower_smoothness" /></td>
+                            </tr>
+                            <tr>
+                                <td>肢體動作的真實度<span style="color:red;">*</span></td>
+                                <td><input type="radio" value="1" name="both_new_flower_real" /></td>
+                                <td><input type="radio" value="2" name="both_new_flower_real" /></td>
+                                <td><input type="radio" value="3" name="both_new_flower_real" /></td>
+                                <td><input type="radio" value="4" name="both_new_flower_real" /></td>
+                                <td><input type="radio" value="5" name="both_new_flower_real" /></td>
+                                <td><input type="radio" value="6" name="both_new_flower_real" /></td>
+                                <td><input type="radio" value="7" name="both_new_flower_real" /></td>
+                            </tr>
+                            <tr>
+                                <td>肢體動作與音樂相呼應的程度<span style="color:red;">*</span></td>
+                                <td><input type="radio" value="1" name="both_new_flower_similarity" /></td>
+                                <td><input type="radio" value="2" name="both_new_flower_similarity" /></td>
+                                <td><input type="radio" value="3" name="both_new_flower_similarity" /></td>
+                                <td><input type="radio" value="4" name="both_new_flower_similarity" /></td>
+                                <td><input type="radio" value="5" name="both_new_flower_similarity" /></td>
+                                <td><input type="radio" value="6" name="both_new_flower_similarity" /></td>
+                                <td><input type="radio" value="7" name="both_new_flower_similarity" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br/>
+
+                    <table class="video-table">
+                        <tr>
+                            <td>
+                                <iframe width="250" height="165" src="https://www.youtube.com/embed/EesSqgAPN54"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="striped-columns border">
+                        <thead>
+                            <tr>
+                                <th>1=最不符合; 7=最符合</th>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                                <th>7</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>肢體動作的穩定度<span style="color:red;">*</span></td>
+                                <td><input type="radio" value="1" name="midi_new_flower_stability" /></td>
+                                <td><input type="radio" value="2" name="midi_new_flower_stability" /></td>
+                                <td><input type="radio" value="3" name="midi_new_flower_stability" /></td>
+                                <td><input type="radio" value="4" name="midi_new_flower_stability" /></td>
+                                <td><input type="radio" value="5" name="midi_new_flower_stability" /></td>
+                                <td><input type="radio" value="6" name="midi_new_flower_stability" /></td>
+                                <td><input type="radio" value="7" name="midi_new_flower_stability" /></td>
+                            </tr>
+                            <tr>
+                                <td>肢體動作的流暢度<span style="color:red;">*</span></td>
+                                <td><input type="radio" value="1" name="midi_new_flower_smoothness" /></td>
+                                <td><input type="radio" value="2" name="midi_new_flower_smoothness" /></td>
+                                <td><input type="radio" value="3" name="midi_new_flower_smoothness" /></td>
+                                <td><input type="radio" value="4" name="midi_new_flower_smoothness" /></td>
+                                <td><input type="radio" value="5" name="midi_new_flower_smoothness" /></td>
+                                <td><input type="radio" value="6" name="midi_new_flower_smoothness" /></td>
+                                <td><input type="radio" value="7" name="midi_new_flower_smoothness" /></td>
+                            </tr>
+                            <tr>
+                                <td>肢體動作的真實度<span style="color:red;">*</span></td>
+                                <td><input type="radio" value="1" name="midi_new_flower_real" /></td>
+                                <td><input type="radio" value="2" name="midi_new_flower_real" /></td>
+                                <td><input type="radio" value="3" name="midi_new_flower_real" /></td>
+                                <td><input type="radio" value="4" name="midi_new_flower_real" /></td>
+                                <td><input type="radio" value="5" name="midi_new_flower_real" /></td>
+                                <td><input type="radio" value="6" name="midi_new_flower_real" /></td>
+                                <td><input type="radio" value="7" name="midi_new_flower_real" /></td>
+                            </tr>
+                            <tr>
+                                <td>肢體動作與音樂相呼應的程度<span style="color:red;">*</span></td>
+                                <td><input type="radio" value="1" name="midi_new_flower_similarity" /></td>
+                                <td><input type="radio" value="2" name="midi_new_flower_similarity" /></td>
+                                <td><input type="radio" value="3" name="midi_new_flower_similarity" /></td>
+                                <td><input type="radio" value="4" name="midi_new_flower_similarity" /></td>
+                                <td><input type="radio" value="5" name="midi_new_flower_similarity" /></td>
+                                <td><input type="radio" value="6" name="midi_new_flower_similarity" /></td>
+                                <td><input type="radio" value="7" name="midi_new_flower_similarity" /></td>
                             </tr>
                         </tbody>
                     </table>
@@ -345,420 +345,9 @@
                     </table>
 
                     <br/>
-
-                    <table class="video-table">
-                        <tr>
-                            <td>
-                                <iframe width="250" height="165" src="https://www.youtube.com/embed/MJuzihsXJrA"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
-                            </td>
-                        </tr>
-                    </table>
-                    <table class="striped-columns border">
-                        <thead>
-                            <tr>
-                                <th>1=最不符合; 7=最符合</th>
-                                <th>1</th>
-                                <th>2</th>
-                                <th>3</th>
-                                <th>4</th>
-                                <th>5</th>
-                                <th>6</th>
-                                <th>7</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>肢體動作的穩定度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="audio_mse_flower_stability" /></td>
-                                <td><input type="radio" value="2" name="audio_mse_flower_stability" /></td>
-                                <td><input type="radio" value="3" name="audio_mse_flower_stability" /></td>
-                                <td><input type="radio" value="4" name="audio_mse_flower_stability" /></td>
-                                <td><input type="radio" value="5" name="audio_mse_flower_stability" /></td>
-                                <td><input type="radio" value="6" name="audio_mse_flower_stability" /></td>
-                                <td><input type="radio" value="7" name="audio_mse_flower_stability" /></td>
-                            </tr>
-                            <tr>
-                                <td>肢體動作的流暢度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="audio_mse_flower_smoothness" /></td>
-                                <td><input type="radio" value="2" name="audio_mse_flower_smoothness" /></td>
-                                <td><input type="radio" value="3" name="audio_mse_flower_smoothness" /></td>
-                                <td><input type="radio" value="4" name="audio_mse_flower_smoothness" /></td>
-                                <td><input type="radio" value="5" name="audio_mse_flower_smoothness" /></td>
-                                <td><input type="radio" value="6" name="audio_mse_flower_smoothness" /></td>
-                                <td><input type="radio" value="7" name="audio_mse_flower_smoothness" /></td>
-                            </tr>
-                            <tr>
-                                <td>肢體動作的真實度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="audio_mse_flower_real" /></td>
-                                <td><input type="radio" value="2" name="audio_mse_flower_real" /></td>
-                                <td><input type="radio" value="3" name="audio_mse_flower_real" /></td>
-                                <td><input type="radio" value="4" name="audio_mse_flower_real" /></td>
-                                <td><input type="radio" value="5" name="audio_mse_flower_real" /></td>
-                                <td><input type="radio" value="6" name="audio_mse_flower_real" /></td>
-                                <td><input type="radio" value="7" name="audio_mse_flower_real" /></td>
-                            </tr>
-                            <tr>
-                                <td>肢體動作與音樂相呼應的程度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="audio_mse_flower_similarity" /></td>
-                                <td><input type="radio" value="2" name="audio_mse_flower_similarity" /></td>
-                                <td><input type="radio" value="3" name="audio_mse_flower_similarity" /></td>
-                                <td><input type="radio" value="4" name="audio_mse_flower_similarity" /></td>
-                                <td><input type="radio" value="5" name="audio_mse_flower_similarity" /></td>
-                                <td><input type="radio" value="6" name="audio_mse_flower_similarity" /></td>
-                                <td><input type="radio" value="7" name="audio_mse_flower_similarity" /></td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <br/>
-
-                    <table class="video-table">
-                        <tr>
-                            <td>
-                                <iframe width="250" height="165" src="https://www.youtube.com/embed/VX8TTUpo33c"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
-                            </td>
-                        </tr>
-                    </table>
-                    <table class="striped-columns border">
-                        <thead>
-                            <tr>
-                                <th>1=最不符合; 7=最符合</th>
-                                <th>1</th>
-                                <th>2</th>
-                                <th>3</th>
-                                <th>4</th>
-                                <th>5</th>
-                                <th>6</th>
-                                <th>7</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>肢體動作的穩定度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="midi_mse_flower_stability" /></td>
-                                <td><input type="radio" value="2" name="midi_mse_flower_stability" /></td>
-                                <td><input type="radio" value="3" name="midi_mse_flower_stability" /></td>
-                                <td><input type="radio" value="4" name="midi_mse_flower_stability" /></td>
-                                <td><input type="radio" value="5" name="midi_mse_flower_stability" /></td>
-                                <td><input type="radio" value="6" name="midi_mse_flower_stability" /></td>
-                                <td><input type="radio" value="7" name="midi_mse_flower_stability" /></td>
-                            </tr>
-                            <tr>
-                                <td>肢體動作的流暢度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="midi_mse_flower_smoothness" /></td>
-                                <td><input type="radio" value="2" name="midi_mse_flower_smoothness" /></td>
-                                <td><input type="radio" value="3" name="midi_mse_flower_smoothness" /></td>
-                                <td><input type="radio" value="4" name="midi_mse_flower_smoothness" /></td>
-                                <td><input type="radio" value="5" name="midi_mse_flower_smoothness" /></td>
-                                <td><input type="radio" value="6" name="midi_mse_flower_smoothness" /></td>
-                                <td><input type="radio" value="7" name="midi_mse_flower_smoothness" /></td>
-                            </tr>
-                            <tr>
-                                <td>肢體動作的真實度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="midi_mse_flower_real" /></td>
-                                <td><input type="radio" value="2" name="midi_mse_flower_real" /></td>
-                                <td><input type="radio" value="3" name="midi_mse_flower_real" /></td>
-                                <td><input type="radio" value="4" name="midi_mse_flower_real" /></td>
-                                <td><input type="radio" value="5" name="midi_mse_flower_real" /></td>
-                                <td><input type="radio" value="6" name="midi_mse_flower_real" /></td>
-                                <td><input type="radio" value="7" name="midi_mse_flower_real" /></td>
-                            </tr>
-                            <tr>
-                                <td>肢體動作與音樂相呼應的程度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="midi_mse_flower_similarity" /></td>
-                                <td><input type="radio" value="2" name="midi_mse_flower_similarity" /></td>
-                                <td><input type="radio" value="3" name="midi_mse_flower_similarity" /></td>
-                                <td><input type="radio" value="4" name="midi_mse_flower_similarity" /></td>
-                                <td><input type="radio" value="5" name="midi_mse_flower_similarity" /></td>
-                                <td><input type="radio" value="6" name="midi_mse_flower_similarity" /></td>
-                                <td><input type="radio" value="7" name="midi_mse_flower_similarity" /></td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <br/>
-
-                    <table class="video-table">
-                        <tr>
-                            <td>
-                                <iframe width="250" height="165" src="https://www.youtube.com/embed/e_srm2xrs_w"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
-                            </td>
-                        </tr>
-                    </table>
-                    <table class="striped-columns border">
-                        <thead>
-                            <tr>
-                                <th>1=最不符合; 7=最符合</th>
-                                <th>1</th>
-                                <th>2</th>
-                                <th>3</th>
-                                <th>4</th>
-                                <th>5</th>
-                                <th>6</th>
-                                <th>7</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>肢體動作的穩定度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="both_new_flower_stability" /></td>
-                                <td><input type="radio" value="2" name="both_new_flower_stability" /></td>
-                                <td><input type="radio" value="3" name="both_new_flower_stability" /></td>
-                                <td><input type="radio" value="4" name="both_new_flower_stability" /></td>
-                                <td><input type="radio" value="5" name="both_new_flower_stability" /></td>
-                                <td><input type="radio" value="6" name="both_new_flower_stability" /></td>
-                                <td><input type="radio" value="7" name="both_new_flower_stability" /></td>
-                            </tr>
-                            <tr>
-                                <td>肢體動作的流暢度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="both_new_flower_smoothness" /></td>
-                                <td><input type="radio" value="2" name="both_new_flower_smoothness" /></td>
-                                <td><input type="radio" value="3" name="both_new_flower_smoothness" /></td>
-                                <td><input type="radio" value="4" name="both_new_flower_smoothness" /></td>
-                                <td><input type="radio" value="5" name="both_new_flower_smoothness" /></td>
-                                <td><input type="radio" value="6" name="both_new_flower_smoothness" /></td>
-                                <td><input type="radio" value="7" name="both_new_flower_smoothness" /></td>
-                            </tr>
-                            <tr>
-                                <td>肢體動作的真實度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="both_new_flower_real" /></td>
-                                <td><input type="radio" value="2" name="both_new_flower_real" /></td>
-                                <td><input type="radio" value="3" name="both_new_flower_real" /></td>
-                                <td><input type="radio" value="4" name="both_new_flower_real" /></td>
-                                <td><input type="radio" value="5" name="both_new_flower_real" /></td>
-                                <td><input type="radio" value="6" name="both_new_flower_real" /></td>
-                                <td><input type="radio" value="7" name="both_new_flower_real" /></td>
-                            </tr>
-                            <tr>
-                                <td>肢體動作與音樂相呼應的程度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="both_new_flower_similarity" /></td>
-                                <td><input type="radio" value="2" name="both_new_flower_similarity" /></td>
-                                <td><input type="radio" value="3" name="both_new_flower_similarity" /></td>
-                                <td><input type="radio" value="4" name="both_new_flower_similarity" /></td>
-                                <td><input type="radio" value="5" name="both_new_flower_similarity" /></td>
-                                <td><input type="radio" value="6" name="both_new_flower_similarity" /></td>
-                                <td><input type="radio" value="7" name="both_new_flower_similarity" /></td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <br/>
                     <br/>
 
                     <p style="font-size: 20px;"><b>2. 愛的禮讚</b></p>
-                    <table class="video-table">
-                        <tr>
-                            <td>
-                                <iframe width="250" height="165" src="https://www.youtube.com/embed/sYFTO1VCMKs"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
-                            </td>
-                        </tr>
-                    </table>
-                    <table class="striped-columns border">
-                        <thead>
-                            <tr>
-                                <th>1=最不符合; 7=最符合</th>
-                                <th>1</th>
-                                <th>2</th>
-                                <th>3</th>
-                                <th>4</th>
-                                <th>5</th>
-                                <th>6</th>
-                                <th>7</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>肢體動作的穩定度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="both_mse_elgar_stability" /></td>
-                                <td><input type="radio" value="2" name="both_mse_elgar_stability" /></td>
-                                <td><input type="radio" value="3" name="both_mse_elgar_stability" /></td>
-                                <td><input type="radio" value="4" name="both_mse_elgar_stability" /></td>
-                                <td><input type="radio" value="5" name="both_mse_elgar_stability" /></td>
-                                <td><input type="radio" value="6" name="both_mse_elgar_stability" /></td>
-                                <td><input type="radio" value="7" name="both_mse_elgar_stability" /></td>
-                            </tr>
-                            <tr>
-                                <td>肢體動作的流暢度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="both_mse_elgar_smoothness" /></td>
-                                <td><input type="radio" value="2" name="both_mse_elgar_smoothness" /></td>
-                                <td><input type="radio" value="3" name="both_mse_elgar_smoothness" /></td>
-                                <td><input type="radio" value="4" name="both_mse_elgar_smoothness" /></td>
-                                <td><input type="radio" value="5" name="both_mse_elgar_smoothness" /></td>
-                                <td><input type="radio" value="6" name="both_mse_elgar_smoothness" /></td>
-                                <td><input type="radio" value="7" name="both_mse_elgar_smoothness" /></td>
-                            </tr>
-                            <tr>
-                                <td>肢體動作的真實度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="both_mse_elgar_real" /></td>
-                                <td><input type="radio" value="2" name="both_mse_elgar_real" /></td>
-                                <td><input type="radio" value="3" name="both_mse_elgar_real" /></td>
-                                <td><input type="radio" value="4" name="both_mse_elgar_real" /></td>
-                                <td><input type="radio" value="5" name="both_mse_elgar_real" /></td>
-                                <td><input type="radio" value="6" name="both_mse_elgar_real" /></td>
-                                <td><input type="radio" value="7" name="both_mse_elgar_real" /></td>
-                            </tr>
-                            <tr>
-                                <td>肢體動作與音樂相呼應的程度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="both_mse_elgar_similarity" /></td>
-                                <td><input type="radio" value="2" name="both_mse_elgar_similarity" /></td>
-                                <td><input type="radio" value="3" name="both_mse_elgar_similarity" /></td>
-                                <td><input type="radio" value="4" name="both_mse_elgar_similarity" /></td>
-                                <td><input type="radio" value="5" name="both_mse_elgar_similarity" /></td>
-                                <td><input type="radio" value="6" name="both_mse_elgar_similarity" /></td>
-                                <td><input type="radio" value="7" name="both_mse_elgar_similarity" /></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <br/>
-
-                    <table class="video-table">
-                        <tr>
-                            <td>
-                                <iframe width="250" height="165" src="https://www.youtube.com/embed/824KIfIG0pc"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
-                            </td>
-                        </tr>
-                    </table>
-                    <table class="striped-columns border">
-                        <thead>
-                            <tr>
-                                <th>1=最不符合; 7=最符合</th>
-                                <th>1</th>
-                                <th>2</th>
-                                <th>3</th>
-                                <th>4</th>
-                                <th>5</th>
-                                <th>6</th>
-                                <th>7</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>肢體動作的穩定度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="midi_new_elgar_stability" /></td>
-                                <td><input type="radio" value="2" name="midi_new_elgar_stability" /></td>
-                                <td><input type="radio" value="3" name="midi_new_elgar_stability" /></td>
-                                <td><input type="radio" value="4" name="midi_new_elgar_stability" /></td>
-                                <td><input type="radio" value="5" name="midi_new_elgar_stability" /></td>
-                                <td><input type="radio" value="6" name="midi_new_elgar_stability" /></td>
-                                <td><input type="radio" value="7" name="midi_new_elgar_stability" /></td>
-                            </tr>
-                            <tr>
-                                <td>肢體動作的流暢度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="midi_new_elgar_smoothness" /></td>
-                                <td><input type="radio" value="2" name="midi_new_elgar_smoothness" /></td>
-                                <td><input type="radio" value="3" name="midi_new_elgar_smoothness" /></td>
-                                <td><input type="radio" value="4" name="midi_new_elgar_smoothness" /></td>
-                                <td><input type="radio" value="5" name="midi_new_elgar_smoothness" /></td>
-                                <td><input type="radio" value="6" name="midi_new_elgar_smoothness" /></td>
-                                <td><input type="radio" value="7" name="midi_new_elgar_smoothness" /></td>
-                            </tr>                                            
-                            <tr>                                             
-                                <td>肢體動作的真實度<span style="color:red;">*</span></td>                   
-                                <td><input type="radio" value="1" name="midi_new_elgar_real" /></td>
-                                <td><input type="radio" value="2" name="midi_new_elgar_real" /></td>
-                                <td><input type="radio" value="3" name="midi_new_elgar_real" /></td>
-                                <td><input type="radio" value="4" name="midi_new_elgar_real" /></td>
-                                <td><input type="radio" value="5" name="midi_new_elgar_real" /></td>
-                                <td><input type="radio" value="6" name="midi_new_elgar_real" /></td>
-                                <td><input type="radio" value="7" name="midi_new_elgar_real" /></td>
-                            </tr>
-                            <tr>
-                                <td>肢體動作與音樂相呼應的程度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="midi_new_elgar_similarity" /></td>
-                                <td><input type="radio" value="2" name="midi_new_elgar_similarity" /></td>
-                                <td><input type="radio" value="3" name="midi_new_elgar_similarity" /></td>
-                                <td><input type="radio" value="4" name="midi_new_elgar_similarity" /></td>
-                                <td><input type="radio" value="5" name="midi_new_elgar_similarity" /></td>
-                                <td><input type="radio" value="6" name="midi_new_elgar_similarity" /></td>
-                                <td><input type="radio" value="7" name="midi_new_elgar_similarity" /></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <br/>
-
-                    <table class="video-table">
-                        <tr>
-                            <td>
-                                <iframe width="250" height="165" src="https://www.youtube.com/embed/Xo2Axd4B9nc"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
-                            </td>
-                        </tr>
-                    </table>
-                    <table class="striped-columns border">
-                        <thead>
-                            <tr>
-                                <th>1=最不符合; 7=最符合</th>
-                                <th>1</th>
-                                <th>2</th>
-                                <th>3</th>
-                                <th>4</th>
-                                <th>5</th>
-                                <th>6</th>
-                                <th>7</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>肢體動作的穩定度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="audio_mse_elgar_stability" /></td>
-                                <td><input type="radio" value="2" name="audio_mse_elgar_stability" /></td>
-                                <td><input type="radio" value="3" name="audio_mse_elgar_stability" /></td>
-                                <td><input type="radio" value="4" name="audio_mse_elgar_stability" /></td>
-                                <td><input type="radio" value="5" name="audio_mse_elgar_stability" /></td>
-                                <td><input type="radio" value="6" name="audio_mse_elgar_stability" /></td>
-                                <td><input type="radio" value="7" name="audio_mse_elgar_stability" /></td>
-                            </tr>
-                            <tr>
-                                <td>肢體動作的流暢度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="audio_mse_elgar_smoothness" /></td>
-                                <td><input type="radio" value="2" name="audio_mse_elgar_smoothness" /></td>
-                                <td><input type="radio" value="3" name="audio_mse_elgar_smoothness" /></td>
-                                <td><input type="radio" value="4" name="audio_mse_elgar_smoothness" /></td>
-                                <td><input type="radio" value="5" name="audio_mse_elgar_smoothness" /></td>
-                                <td><input type="radio" value="6" name="audio_mse_elgar_smoothness" /></td>
-                                <td><input type="radio" value="7" name="audio_mse_elgar_smoothness" /></td>
-                            </tr>
-                            <tr>
-                                <td>肢體動作的真實度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="audio_mse_elgar_real" /></td>
-                                <td><input type="radio" value="2" name="audio_mse_elgar_real" /></td>
-                                <td><input type="radio" value="3" name="audio_mse_elgar_real" /></td>
-                                <td><input type="radio" value="4" name="audio_mse_elgar_real" /></td>
-                                <td><input type="radio" value="5" name="audio_mse_elgar_real" /></td>
-                                <td><input type="radio" value="6" name="audio_mse_elgar_real" /></td>
-                                <td><input type="radio" value="7" name="audio_mse_elgar_real" /></td>
-                            </tr>
-                            <tr>
-                                <td>肢體動作與音樂相呼應的程度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="audio_mse_elgar_similarity" /></td>
-                                <td><input type="radio" value="2" name="audio_mse_elgar_similarity" /></td>
-                                <td><input type="radio" value="3" name="audio_mse_elgar_similarity" /></td>
-                                <td><input type="radio" value="4" name="audio_mse_elgar_similarity" /></td>
-                                <td><input type="radio" value="5" name="audio_mse_elgar_similarity" /></td>
-                                <td><input type="radio" value="6" name="audio_mse_elgar_similarity" /></td>
-                                <td><input type="radio" value="7" name="audio_mse_elgar_similarity" /></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <br/>
-
                     <table class="video-table">
                         <tr>
                             <td>
@@ -825,7 +414,6 @@
                             </tr>
                         </tbody>
                     </table>
-
                     <br/>
 
                     <table class="video-table">
@@ -871,9 +459,9 @@
                                 <td><input type="radio" value="5" name="both_new_elgar_smoothness" /></td>
                                 <td><input type="radio" value="6" name="both_new_elgar_smoothness" /></td>
                                 <td><input type="radio" value="7" name="both_new_elgar_smoothness" /></td>
-                            </tr>
-                            <tr>
-                                <td>肢體動作的真實度<span style="color:red;">*</span></td>
+                            </tr>                                            
+                            <tr>                                             
+                                <td>肢體動作的真實度<span style="color:red;">*</span></td>                   
                                 <td><input type="radio" value="1" name="both_new_elgar_real" /></td>
                                 <td><input type="radio" value="2" name="both_new_elgar_real" /></td>
                                 <td><input type="radio" value="3" name="both_new_elgar_real" /></td>
@@ -894,7 +482,6 @@
                             </tr>
                         </tbody>
                     </table>
-
                     <br/>
 
                     <table class="video-table">
@@ -963,13 +550,12 @@
                             </tr>
                         </tbody>
                     </table>
-
                     <br/>
 
                     <table class="video-table">
                         <tr>
                             <td>
-                                <iframe width="250" height="165" src="https://www.youtube.com/embed/LTaYQTtqvug"
+                                <iframe width="250" height="165" src="https://www.youtube.com/embed/824KIfIG0pc"
                                     title="YouTube video player" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     allowfullscreen></iframe>
@@ -992,43 +578,43 @@
                         <tbody>
                             <tr>
                                 <td>肢體動作的穩定度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="midi_mse_elgar_stability" /></td>
-                                <td><input type="radio" value="2" name="midi_mse_elgar_stability" /></td>
-                                <td><input type="radio" value="3" name="midi_mse_elgar_stability" /></td>
-                                <td><input type="radio" value="4" name="midi_mse_elgar_stability" /></td>
-                                <td><input type="radio" value="5" name="midi_mse_elgar_stability" /></td>
-                                <td><input type="radio" value="6" name="midi_mse_elgar_stability" /></td>
-                                <td><input type="radio" value="7" name="midi_mse_elgar_stability" /></td>
+                                <td><input type="radio" value="1" name="midi_new_elgar_stability" /></td>
+                                <td><input type="radio" value="2" name="midi_new_elgar_stability" /></td>
+                                <td><input type="radio" value="3" name="midi_new_elgar_stability" /></td>
+                                <td><input type="radio" value="4" name="midi_new_elgar_stability" /></td>
+                                <td><input type="radio" value="5" name="midi_new_elgar_stability" /></td>
+                                <td><input type="radio" value="6" name="midi_new_elgar_stability" /></td>
+                                <td><input type="radio" value="7" name="midi_new_elgar_stability" /></td>
                             </tr>
                             <tr>
                                 <td>肢體動作的流暢度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="midi_mse_elgar_smoothness" /></td>
-                                <td><input type="radio" value="2" name="midi_mse_elgar_smoothness" /></td>
-                                <td><input type="radio" value="3" name="midi_mse_elgar_smoothness" /></td>
-                                <td><input type="radio" value="4" name="midi_mse_elgar_smoothness" /></td>
-                                <td><input type="radio" value="5" name="midi_mse_elgar_smoothness" /></td>
-                                <td><input type="radio" value="6" name="midi_mse_elgar_smoothness" /></td>
-                                <td><input type="radio" value="7" name="midi_mse_elgar_smoothness" /></td>
+                                <td><input type="radio" value="1" name="midi_new_elgar_smoothness" /></td>
+                                <td><input type="radio" value="2" name="midi_new_elgar_smoothness" /></td>
+                                <td><input type="radio" value="3" name="midi_new_elgar_smoothness" /></td>
+                                <td><input type="radio" value="4" name="midi_new_elgar_smoothness" /></td>
+                                <td><input type="radio" value="5" name="midi_new_elgar_smoothness" /></td>
+                                <td><input type="radio" value="6" name="midi_new_elgar_smoothness" /></td>
+                                <td><input type="radio" value="7" name="midi_new_elgar_smoothness" /></td>
                             </tr>
                             <tr>
                                 <td>肢體動作的真實度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="midi_mse_elgar_real" /></td>
-                                <td><input type="radio" value="2" name="midi_mse_elgar_real" /></td>
-                                <td><input type="radio" value="3" name="midi_mse_elgar_real" /></td>
-                                <td><input type="radio" value="4" name="midi_mse_elgar_real" /></td>
-                                <td><input type="radio" value="5" name="midi_mse_elgar_real" /></td>
-                                <td><input type="radio" value="6" name="midi_mse_elgar_real" /></td>
-                                <td><input type="radio" value="7" name="midi_mse_elgar_real" /></td>
+                                <td><input type="radio" value="1" name="midi_new_elgar_real" /></td>
+                                <td><input type="radio" value="2" name="midi_new_elgar_real" /></td>
+                                <td><input type="radio" value="3" name="midi_new_elgar_real" /></td>
+                                <td><input type="radio" value="4" name="midi_new_elgar_real" /></td>
+                                <td><input type="radio" value="5" name="midi_new_elgar_real" /></td>
+                                <td><input type="radio" value="6" name="midi_new_elgar_real" /></td>
+                                <td><input type="radio" value="7" name="midi_new_elgar_real" /></td>
                             </tr>
                             <tr>
-                                <td>肢體動作與音樂相呼應的程度<span style="color:red;">*</span></td>         
-                                <td><input type="radio" value="1" name="midi_mse_elgar_similarity" /></td>
-                                <td><input type="radio" value="2" name="midi_mse_elgar_similarity" /></td>
-                                <td><input type="radio" value="3" name="midi_mse_elgar_similarity" /></td>
-                                <td><input type="radio" value="4" name="midi_mse_elgar_similarity" /></td>
-                                <td><input type="radio" value="5" name="midi_mse_elgar_similarity" /></td>
-                                <td><input type="radio" value="6" name="midi_mse_elgar_similarity" /></td>
-                                <td><input type="radio" value="7" name="midi_mse_elgar_similarity" /></td>
+                                <td>肢體動作與音樂相呼應的程度<span style="color:red;">*</span></td>
+                                <td><input type="radio" value="1" name="midi_new_elgar_similarity" /></td>
+                                <td><input type="radio" value="2" name="midi_new_elgar_similarity" /></td>
+                                <td><input type="radio" value="3" name="midi_new_elgar_similarity" /></td>
+                                <td><input type="radio" value="4" name="midi_new_elgar_similarity" /></td>
+                                <td><input type="radio" value="5" name="midi_new_elgar_similarity" /></td>
+                                <td><input type="radio" value="6" name="midi_new_elgar_similarity" /></td>
+                                <td><input type="radio" value="7" name="midi_new_elgar_similarity" /></td>
                             </tr>
                         </tbody>
                     </table>
@@ -1037,74 +623,6 @@
                     <br/>
 
                     <p style="font-size: 20px;"><b>3. BWV1001 1st Movement Adagio</b></p>
-                    <table class="video-table">
-                        <tr>
-                            <td>
-                                <iframe width="250" height="165" src="https://www.youtube.com/embed/mMkqckvK8bw"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
-                            </td>
-                        </tr>
-                    </table>
-                    <table class="striped-columns border">
-                        <thead>
-                            <tr>
-                                <th>1=最不符合; 7=最符合</th>
-                                <th>1</th>
-                                <th>2</th>
-                                <th>3</th>
-                                <th>4</th>
-                                <th>5</th>
-                                <th>6</th>
-                                <th>7</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>肢體動作的穩定度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="audio_mse_bwv1001ada_stability" /></td>
-                                <td><input type="radio" value="2" name="audio_mse_bwv1001ada_stability" /></td>
-                                <td><input type="radio" value="3" name="audio_mse_bwv1001ada_stability" /></td>
-                                <td><input type="radio" value="4" name="audio_mse_bwv1001ada_stability" /></td>
-                                <td><input type="radio" value="5" name="audio_mse_bwv1001ada_stability" /></td>
-                                <td><input type="radio" value="6" name="audio_mse_bwv1001ada_stability" /></td>
-                                <td><input type="radio" value="7" name="audio_mse_bwv1001ada_stability" /></td>
-                            </tr>
-                            <tr>
-                                <td>肢體動作的流暢度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="audio_mse_bwv1001ada_smoothness" /></td>
-                                <td><input type="radio" value="2" name="audio_mse_bwv1001ada_smoothness" /></td>
-                                <td><input type="radio" value="3" name="audio_mse_bwv1001ada_smoothness" /></td>
-                                <td><input type="radio" value="4" name="audio_mse_bwv1001ada_smoothness" /></td>
-                                <td><input type="radio" value="5" name="audio_mse_bwv1001ada_smoothness" /></td>
-                                <td><input type="radio" value="6" name="audio_mse_bwv1001ada_smoothness" /></td>
-                                <td><input type="radio" value="7" name="audio_mse_bwv1001ada_smoothness" /></td>
-                            </tr>
-                            <tr>
-                                <td>肢體動作的真實度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="audio_mse_bwv1001ada_real" /></td>
-                                <td><input type="radio" value="2" name="audio_mse_bwv1001ada_real" /></td>
-                                <td><input type="radio" value="3" name="audio_mse_bwv1001ada_real" /></td>
-                                <td><input type="radio" value="4" name="audio_mse_bwv1001ada_real" /></td>
-                                <td><input type="radio" value="5" name="audio_mse_bwv1001ada_real" /></td>
-                                <td><input type="radio" value="6" name="audio_mse_bwv1001ada_real" /></td>
-                                <td><input type="radio" value="7" name="audio_mse_bwv1001ada_real" /></td>
-                            </tr>
-                            <tr>
-                                <td>肢體動作與音樂相呼應的程度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="audio_mse_bwv1001ada_similarity" /></td>
-                                <td><input type="radio" value="2" name="audio_mse_bwv1001ada_similarity" /></td>
-                                <td><input type="radio" value="3" name="audio_mse_bwv1001ada_similarity" /></td>
-                                <td><input type="radio" value="4" name="audio_mse_bwv1001ada_similarity" /></td>
-                                <td><input type="radio" value="5" name="audio_mse_bwv1001ada_similarity" /></td>
-                                <td><input type="radio" value="6" name="audio_mse_bwv1001ada_similarity" /></td>
-                                <td><input type="radio" value="7" name="audio_mse_bwv1001ada_similarity" /></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <br/>
-
                     <table class="video-table">
                         <tr>
                             <td>
@@ -1148,9 +666,9 @@
                                 <td><input type="radio" value="5" name="midi_new_bwv1001ada_smoothness" /></td>
                                 <td><input type="radio" value="6" name="midi_new_bwv1001ada_smoothness" /></td>
                                 <td><input type="radio" value="7" name="midi_new_bwv1001ada_smoothness" /></td>
-                            </tr>                                            
-                            <tr>                                             
-                                <td>肢體動作的真實度<span style="color:red;">*</span></td>                   
+                            </tr>
+                            <tr>
+                                <td>肢體動作的真實度<span style="color:red;">*</span></td>
                                 <td><input type="radio" value="1" name="midi_new_bwv1001ada_real" /></td>
                                 <td><input type="radio" value="2" name="midi_new_bwv1001ada_real" /></td>
                                 <td><input type="radio" value="3" name="midi_new_bwv1001ada_real" /></td>
@@ -1168,74 +686,6 @@
                                 <td><input type="radio" value="5" name="midi_new_bwv1001ada_similarity" /></td>
                                 <td><input type="radio" value="6" name="midi_new_bwv1001ada_similarity" /></td>
                                 <td><input type="radio" value="7" name="midi_new_bwv1001ada_similarity" /></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <br/>
-
-                    <table class="video-table">
-                        <tr>
-                            <td>
-                                <iframe width="250" height="165" src="https://www.youtube.com/embed/IcSr91uEw0k"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
-                            </td>
-                        </tr>
-                    </table>
-                    <table class="striped-columns border">
-                        <thead>
-                            <tr>
-                                <th>1=最不符合; 7=最符合</th>
-                                <th>1</th>
-                                <th>2</th>
-                                <th>3</th>
-                                <th>4</th>
-                                <th>5</th>
-                                <th>6</th>
-                                <th>7</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>肢體動作的穩定度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="both_mse_bwv1001ada_stability" /></td>
-                                <td><input type="radio" value="2" name="both_mse_bwv1001ada_stability" /></td>
-                                <td><input type="radio" value="3" name="both_mse_bwv1001ada_stability" /></td>
-                                <td><input type="radio" value="4" name="both_mse_bwv1001ada_stability" /></td>
-                                <td><input type="radio" value="5" name="both_mse_bwv1001ada_stability" /></td>
-                                <td><input type="radio" value="6" name="both_mse_bwv1001ada_stability" /></td>
-                                <td><input type="radio" value="7" name="both_mse_bwv1001ada_stability" /></td>
-                            </tr>
-                            <tr>
-                                <td>肢體動作的流暢度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="both_mse_bwv1001ada_smoothness" /></td>
-                                <td><input type="radio" value="2" name="both_mse_bwv1001ada_smoothness" /></td>
-                                <td><input type="radio" value="3" name="both_mse_bwv1001ada_smoothness" /></td>
-                                <td><input type="radio" value="4" name="both_mse_bwv1001ada_smoothness" /></td>
-                                <td><input type="radio" value="5" name="both_mse_bwv1001ada_smoothness" /></td>
-                                <td><input type="radio" value="6" name="both_mse_bwv1001ada_smoothness" /></td>
-                                <td><input type="radio" value="7" name="both_mse_bwv1001ada_smoothness" /></td>
-                            </tr>
-                            <tr>
-                                <td>肢體動作的真實度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="both_mse_bwv1001ada_real" /></td>
-                                <td><input type="radio" value="2" name="both_mse_bwv1001ada_real" /></td>
-                                <td><input type="radio" value="3" name="both_mse_bwv1001ada_real" /></td>
-                                <td><input type="radio" value="4" name="both_mse_bwv1001ada_real" /></td>
-                                <td><input type="radio" value="5" name="both_mse_bwv1001ada_real" /></td>
-                                <td><input type="radio" value="6" name="both_mse_bwv1001ada_real" /></td>
-                                <td><input type="radio" value="7" name="both_mse_bwv1001ada_real" /></td>
-                            </tr>
-                            <tr>
-                                <td>肢體動作與音樂相呼應的程度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="both_mse_bwv1001ada_similarity" /></td>
-                                <td><input type="radio" value="2" name="both_mse_bwv1001ada_similarity" /></td>
-                                <td><input type="radio" value="3" name="both_mse_bwv1001ada_similarity" /></td>
-                                <td><input type="radio" value="4" name="both_mse_bwv1001ada_similarity" /></td>
-                                <td><input type="radio" value="5" name="both_mse_bwv1001ada_similarity" /></td>
-                                <td><input type="radio" value="6" name="both_mse_bwv1001ada_similarity" /></td>
-                                <td><input type="radio" value="7" name="both_mse_bwv1001ada_similarity" /></td>
                             </tr>
                         </tbody>
                     </table>
@@ -1284,9 +734,9 @@
                                 <td><input type="radio" value="5" name="both_new_bwv1001ada_smoothness" /></td>
                                 <td><input type="radio" value="6" name="both_new_bwv1001ada_smoothness" /></td>
                                 <td><input type="radio" value="7" name="both_new_bwv1001ada_smoothness" /></td>
-                            </tr>
-                            <tr>
-                                <td>肢體動作的真實度<span style="color:red;">*</span></td>
+                            </tr>                                            
+                            <tr>                                             
+                                <td>肢體動作的真實度<span style="color:red;">*</span></td>                   
                                 <td><input type="radio" value="1" name="both_new_bwv1001ada_real" /></td>
                                 <td><input type="radio" value="2" name="both_new_bwv1001ada_real" /></td>
                                 <td><input type="radio" value="3" name="both_new_bwv1001ada_real" /></td>
@@ -1307,7 +757,6 @@
                             </tr>
                         </tbody>
                     </table>
-
                     <br/>
 
                     <table class="video-table">
@@ -1378,11 +827,12 @@
                     </table>
 
                     <br/>
-
+                    <br/>
+                    <p style="font-size: 20px;"><b>4. BWV1001 2nd Movement Fugue</b></p>
                     <table class="video-table">
                         <tr>
                             <td>
-                                <iframe width="250" height="165" src="https://www.youtube.com/embed/SSpqLrYakuo"
+                                <iframe width="250" height="165" src="https://www.youtube.com/embed/9mQ32XLYpmY"
                                     title="YouTube video player" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     allowfullscreen></iframe>
@@ -1405,47 +855,185 @@
                         <tbody>
                             <tr>
                                 <td>肢體動作的穩定度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="midi_mse_bwv1001ada_stability" /></td>
-                                <td><input type="radio" value="2" name="midi_mse_bwv1001ada_stability" /></td>
-                                <td><input type="radio" value="3" name="midi_mse_bwv1001ada_stability" /></td>
-                                <td><input type="radio" value="4" name="midi_mse_bwv1001ada_stability" /></td>
-                                <td><input type="radio" value="5" name="midi_mse_bwv1001ada_stability" /></td>
-                                <td><input type="radio" value="6" name="midi_mse_bwv1001ada_stability" /></td>
-                                <td><input type="radio" value="7" name="midi_mse_bwv1001ada_stability" /></td>
+                                <td><input type="radio" value="1" name="audio_new_bwv1001fug_stability" /></td>
+                                <td><input type="radio" value="2" name="audio_new_bwv1001fug_stability" /></td>
+                                <td><input type="radio" value="3" name="audio_new_bwv1001fug_stability" /></td>
+                                <td><input type="radio" value="4" name="audio_new_bwv1001fug_stability" /></td>
+                                <td><input type="radio" value="5" name="audio_new_bwv1001fug_stability" /></td>
+                                <td><input type="radio" value="6" name="audio_new_bwv1001fug_stability" /></td>
+                                <td><input type="radio" value="7" name="audio_new_bwv1001fug_stability" /></td>
                             </tr>
                             <tr>
                                 <td>肢體動作的流暢度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="midi_mse_bwv1001ada_smoothness" /></td>
-                                <td><input type="radio" value="2" name="midi_mse_bwv1001ada_smoothness" /></td>
-                                <td><input type="radio" value="3" name="midi_mse_bwv1001ada_smoothness" /></td>
-                                <td><input type="radio" value="4" name="midi_mse_bwv1001ada_smoothness" /></td>
-                                <td><input type="radio" value="5" name="midi_mse_bwv1001ada_smoothness" /></td>
-                                <td><input type="radio" value="6" name="midi_mse_bwv1001ada_smoothness" /></td>
-                                <td><input type="radio" value="7" name="midi_mse_bwv1001ada_smoothness" /></td>
+                                <td><input type="radio" value="1" name="audio_new_bwv1001fug_smoothness" /></td>
+                                <td><input type="radio" value="2" name="audio_new_bwv1001fug_smoothness" /></td>
+                                <td><input type="radio" value="3" name="audio_new_bwv1001fug_smoothness" /></td>
+                                <td><input type="radio" value="4" name="audio_new_bwv1001fug_smoothness" /></td>
+                                <td><input type="radio" value="5" name="audio_new_bwv1001fug_smoothness" /></td>
+                                <td><input type="radio" value="6" name="audio_new_bwv1001fug_smoothness" /></td>
+                                <td><input type="radio" value="7" name="audio_new_bwv1001fug_smoothness" /></td>
                             </tr>
                             <tr>
                                 <td>肢體動作的真實度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="midi_mse_bwv1001ada_real" /></td>
-                                <td><input type="radio" value="2" name="midi_mse_bwv1001ada_real" /></td>
-                                <td><input type="radio" value="3" name="midi_mse_bwv1001ada_real" /></td>
-                                <td><input type="radio" value="4" name="midi_mse_bwv1001ada_real" /></td>
-                                <td><input type="radio" value="5" name="midi_mse_bwv1001ada_real" /></td>
-                                <td><input type="radio" value="6" name="midi_mse_bwv1001ada_real" /></td>
-                                <td><input type="radio" value="7" name="midi_mse_bwv1001ada_real" /></td>
+                                <td><input type="radio" value="1" name="audio_new_bwv1001fug_real" /></td>
+                                <td><input type="radio" value="2" name="audio_new_bwv1001fug_real" /></td>
+                                <td><input type="radio" value="3" name="audio_new_bwv1001fug_real" /></td>
+                                <td><input type="radio" value="4" name="audio_new_bwv1001fug_real" /></td>
+                                <td><input type="radio" value="5" name="audio_new_bwv1001fug_real" /></td>
+                                <td><input type="radio" value="6" name="audio_new_bwv1001fug_real" /></td>
+                                <td><input type="radio" value="7" name="audio_new_bwv1001fug_real" /></td>
                             </tr>
                             <tr>
                                 <td>肢體動作與音樂相呼應的程度<span style="color:red;">*</span></td>
-                                <td><input type="radio" value="1" name="midi_mse_bwv1001ada_similarity" /></td>
-                                <td><input type="radio" value="2" name="midi_mse_bwv1001ada_similarity" /></td>
-                                <td><input type="radio" value="3" name="midi_mse_bwv1001ada_similarity" /></td>
-                                <td><input type="radio" value="4" name="midi_mse_bwv1001ada_similarity" /></td>
-                                <td><input type="radio" value="5" name="midi_mse_bwv1001ada_similarity" /></td>
-                                <td><input type="radio" value="6" name="midi_mse_bwv1001ada_similarity" /></td>
-                                <td><input type="radio" value="7" name="midi_mse_bwv1001ada_similarity" /></td>
+                                <td><input type="radio" value="1" name="audio_new_bwv1001fug_similarity" /></td>
+                                <td><input type="radio" value="2" name="audio_new_bwv1001fug_similarity" /></td>
+                                <td><input type="radio" value="3" name="audio_new_bwv1001fug_similarity" /></td>
+                                <td><input type="radio" value="4" name="audio_new_bwv1001fug_similarity" /></td>
+                                <td><input type="radio" value="5" name="audio_new_bwv1001fug_similarity" /></td>
+                                <td><input type="radio" value="6" name="audio_new_bwv1001fug_similarity" /></td>
+                                <td><input type="radio" value="7" name="audio_new_bwv1001fug_similarity" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br/>
+
+                    <table class="video-table">
+                        <tr>
+                            <td>
+                                <iframe width="250" height="165" src="https://www.youtube.com/embed/pzuXAcHH8Jw"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="striped-columns border">
+                        <thead>
+                            <tr>
+                                <th>1=最不符合; 7=最符合</th>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                                <th>7</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>肢體動作的穩定度<span style="color:red;">*</span></td>
+                                <td><input type="radio" value="1" name="midi_new_bwv1001fug_stability" /></td>
+                                <td><input type="radio" value="2" name="midi_new_bwv1001fug_stability" /></td>
+                                <td><input type="radio" value="3" name="midi_new_bwv1001fug_stability" /></td>
+                                <td><input type="radio" value="4" name="midi_new_bwv1001fug_stability" /></td>
+                                <td><input type="radio" value="5" name="midi_new_bwv1001fug_stability" /></td>
+                                <td><input type="radio" value="6" name="midi_new_bwv1001fug_stability" /></td>
+                                <td><input type="radio" value="7" name="midi_new_bwv1001fug_stability" /></td>
+                            </tr>
+                            <tr>
+                                <td>肢體動作的流暢度<span style="color:red;">*</span></td>
+                                <td><input type="radio" value="1" name="midi_new_bwv1001fug_smoothness" /></td>
+                                <td><input type="radio" value="2" name="midi_new_bwv1001fug_smoothness" /></td>
+                                <td><input type="radio" value="3" name="midi_new_bwv1001fug_smoothness" /></td>
+                                <td><input type="radio" value="4" name="midi_new_bwv1001fug_smoothness" /></td>
+                                <td><input type="radio" value="5" name="midi_new_bwv1001fug_smoothness" /></td>
+                                <td><input type="radio" value="6" name="midi_new_bwv1001fug_smoothness" /></td>
+                                <td><input type="radio" value="7" name="midi_new_bwv1001fug_smoothness" /></td>
+                            </tr>                                            
+                            <tr>                                             
+                                <td>肢體動作的真實度<span style="color:red;">*</span></td>                   
+                                <td><input type="radio" value="1" name="midi_new_bwv1001fug_real" /></td>
+                                <td><input type="radio" value="2" name="midi_new_bwv1001fug_real" /></td>
+                                <td><input type="radio" value="3" name="midi_new_bwv1001fug_real" /></td>
+                                <td><input type="radio" value="4" name="midi_new_bwv1001fug_real" /></td>
+                                <td><input type="radio" value="5" name="midi_new_bwv1001fug_real" /></td>
+                                <td><input type="radio" value="6" name="midi_new_bwv1001fug_real" /></td>
+                                <td><input type="radio" value="7" name="midi_new_bwv1001fug_real" /></td>
+                            </tr>
+                            <tr>
+                                <td>肢體動作與音樂相呼應的程度<span style="color:red;">*</span></td>
+                                <td><input type="radio" value="1" name="midi_new_bwv1001fug_similarity" /></td>
+                                <td><input type="radio" value="2" name="midi_new_bwv1001fug_similarity" /></td>
+                                <td><input type="radio" value="3" name="midi_new_bwv1001fug_similarity" /></td>
+                                <td><input type="radio" value="4" name="midi_new_bwv1001fug_similarity" /></td>
+                                <td><input type="radio" value="5" name="midi_new_bwv1001fug_similarity" /></td>
+                                <td><input type="radio" value="6" name="midi_new_bwv1001fug_similarity" /></td>
+                                <td><input type="radio" value="7" name="midi_new_bwv1001fug_similarity" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br/>
+
+                    <table class="video-table">
+                        <tr>
+                            <td>
+                                <iframe width="250" height="165" src="https://www.youtube.com/embed/Dp3t5guzFKA"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="striped-columns border">
+                        <thead>
+                            <tr>
+                                <th>1=最不符合; 7=最符合</th>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                                <th>7</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>肢體動作的穩定度<span style="color:red;">*</span></td>
+                                <td><input type="radio" value="1" name="both_new_bwv1001fug_stability" /></td>
+                                <td><input type="radio" value="2" name="both_new_bwv1001fug_stability" /></td>
+                                <td><input type="radio" value="3" name="both_new_bwv1001fug_stability" /></td>
+                                <td><input type="radio" value="4" name="both_new_bwv1001fug_stability" /></td>
+                                <td><input type="radio" value="5" name="both_new_bwv1001fug_stability" /></td>
+                                <td><input type="radio" value="6" name="both_new_bwv1001fug_stability" /></td>
+                                <td><input type="radio" value="7" name="both_new_bwv1001fug_stability" /></td>
+                            </tr>
+                            <tr>
+                                <td>肢體動作的流暢度<span style="color:red;">*</span></td>
+                                <td><input type="radio" value="1" name="both_new_bwv1001fug_smoothness" /></td>
+                                <td><input type="radio" value="2" name="both_new_bwv1001fug_smoothness" /></td>
+                                <td><input type="radio" value="3" name="both_new_bwv1001fug_smoothness" /></td>
+                                <td><input type="radio" value="4" name="both_new_bwv1001fug_smoothness" /></td>
+                                <td><input type="radio" value="5" name="both_new_bwv1001fug_smoothness" /></td>
+                                <td><input type="radio" value="6" name="both_new_bwv1001fug_smoothness" /></td>
+                                <td><input type="radio" value="7" name="both_new_bwv1001fug_smoothness" /></td>
+                            </tr>
+                            <tr>
+                                <td>肢體動作的真實度<span style="color:red;">*</span></td>
+                                <td><input type="radio" value="1" name="both_new_bwv1001fug_real" /></td>
+                                <td><input type="radio" value="2" name="both_new_bwv1001fug_real" /></td>
+                                <td><input type="radio" value="3" name="both_new_bwv1001fug_real" /></td>
+                                <td><input type="radio" value="4" name="both_new_bwv1001fug_real" /></td>
+                                <td><input type="radio" value="5" name="both_new_bwv1001fug_real" /></td>
+                                <td><input type="radio" value="6" name="both_new_bwv1001fug_real" /></td>
+                                <td><input type="radio" value="7" name="both_new_bwv1001fug_real" /></td>
+                            </tr>
+                            <tr>
+                                <td>肢體動作與音樂相呼應的程度<span style="color:red;">*</span></td>
+                                <td><input type="radio" value="1" name="both_new_bwv1001fug_similarity" /></td>
+                                <td><input type="radio" value="2" name="both_new_bwv1001fug_similarity" /></td>
+                                <td><input type="radio" value="3" name="both_new_bwv1001fug_similarity" /></td>
+                                <td><input type="radio" value="4" name="both_new_bwv1001fug_similarity" /></td>
+                                <td><input type="radio" value="5" name="both_new_bwv1001fug_similarity" /></td>
+                                <td><input type="radio" value="6" name="both_new_bwv1001fug_similarity" /></td>
+                                <td><input type="radio" value="7" name="both_new_bwv1001fug_similarity" /></td>
                             </tr>
                         </tbody>
                     </table>
 
+                    <br/>
+                    <br/>
                 </div>
                 <!--script>
                     $(document).ready(function(){
@@ -1628,30 +1216,15 @@
         }
 
         // video questions
-		var audio_mse_elgar_stability = $('input:radio[name=audio_mse_elgar_stability]:checked').val();
-		var audio_mse_elgar_smoothness = $('input:radio[name=audio_mse_elgar_smoothness]:checked').val();
-		var audio_mse_elgar_real = $('input:radio[name=audio_mse_elgar_real]:checked').val();
-		var audio_mse_elgar_similarity = $('input:radio[name=audio_mse_elgar_similarity]:checked').val();
-		
 		var audio_new_elgar_stability = $('input:radio[name=audio_new_elgar_stability]:checked').val();
 		var audio_new_elgar_smoothness = $('input:radio[name=audio_new_elgar_smoothness]:checked').val();
 		var audio_new_elgar_real = $('input:radio[name=audio_new_elgar_real]:checked').val();
-		var audio_new_elgar_similarity = $('input:radio[name=audio_new_elgar_similarity]:checked').val();		
-		
-		var both_mse_elgar_stability = $('input:radio[name=both_mse_elgar_stability]:checked').val();
-		var both_mse_elgar_smoothness = $('input:radio[name=both_mse_elgar_smoothness]:checked').val();
-		var both_mse_elgar_real = $('input:radio[name=both_mse_elgar_real]:checked').val();
-		var both_mse_elgar_similarity = $('input:radio[name=both_mse_elgar_similarity]:checked').val();
+		var audio_new_elgar_similarity = $('input:radio[name=audio_new_elgar_similarity]:checked').val();
 
 		var both_new_elgar_stability = $('input:radio[name=both_new_elgar_stability]:checked').val();
 		var both_new_elgar_smoothness = $('input:radio[name=both_new_elgar_smoothness]:checked').val();
 		var both_new_elgar_real = $('input:radio[name=both_new_elgar_real]:checked').val();
 		var both_new_elgar_similarity = $('input:radio[name=both_new_elgar_similarity]:checked').val();
-		
-		var midi_mse_elgar_stability = $('input:radio[name=midi_mse_elgar_stability]:checked').val();
-		var midi_mse_elgar_smoothness = $('input:radio[name=midi_mse_elgar_smoothness]:checked').val();
-		var midi_mse_elgar_real = $('input:radio[name=midi_mse_elgar_real]:checked').val();
-		var midi_mse_elgar_similarity = $('input:radio[name=midi_mse_elgar_similarity]:checked').val();
 		
 		var midi_new_elgar_stability = $('input:radio[name=midi_new_elgar_stability]:checked').val();
 		var midi_new_elgar_smoothness = $('input:radio[name=midi_new_elgar_smoothness]:checked').val();
@@ -1662,32 +1235,17 @@
 		var ground_truth_elgar_smoothness = $('input:radio[name=ground_truth_elgar_smoothness]:checked').val();
 		var ground_truth_elgar_real = $('input:radio[name=ground_truth_elgar_real]:checked').val();
 		var ground_truth_elgar_similarity = $('input:radio[name=ground_truth_elgar_similarity]:checked').val();
-		
-		
-		var audio_mse_flower_stability = $('input:radio[name=audio_mse_flower_stability]:checked').val();
-		var audio_mse_flower_smoothness = $('input:radio[name=audio_mse_flower_smoothness]:checked').val();
-		var audio_mse_flower_real = $('input:radio[name=audio_mse_flower_real]:checked').val();
-		var audio_mse_flower_similarity = $('input:radio[name=audio_mse_flower_similarity]:checked').val();
+
 		
 		var audio_new_flower_stability = $('input:radio[name=audio_new_flower_stability]:checked').val();
 		var audio_new_flower_smoothness = $('input:radio[name=audio_new_flower_smoothness]:checked').val();
 		var audio_new_flower_real = $('input:radio[name=audio_new_flower_real]:checked').val();
 		var audio_new_flower_similarity = $('input:radio[name=audio_new_flower_similarity]:checked').val();
-		
-		var both_mse_flower_stability = $('input:radio[name=both_mse_flower_stability]:checked').val();
-		var both_mse_flower_smoothness = $('input:radio[name=both_mse_flower_smoothness]:checked').val();
-		var both_mse_flower_real = $('input:radio[name=both_mse_flower_real]:checked').val();
-		var both_mse_flower_similarity = $('input:radio[name=both_mse_flower_similarity]:checked').val();
 
 		var both_new_flower_stability = $('input:radio[name=both_new_flower_stability]:checked').val();
 		var both_new_flower_smoothness = $('input:radio[name=both_new_flower_smoothness]:checked').val();
 		var both_new_flower_real = $('input:radio[name=both_new_flower_real]:checked').val();
 		var both_new_flower_similarity = $('input:radio[name=both_new_flower_similarity]:checked').val();
-
-		var midi_mse_flower_stability = $('input:radio[name=midi_mse_flower_stability]:checked').val();
-		var midi_mse_flower_smoothness = $('input:radio[name=midi_mse_flower_smoothness]:checked').val();
-		var midi_mse_flower_real = $('input:radio[name=midi_mse_flower_real]:checked').val();
-		var midi_mse_flower_similarity = $('input:radio[name=midi_mse_flower_similarity]:checked').val();
 
 		var midi_new_flower_stability = $('input:radio[name=midi_new_flower_stability]:checked').val();
 		var midi_new_flower_smoothness = $('input:radio[name=midi_new_flower_smoothness]:checked').val();
@@ -1698,96 +1256,39 @@
 		var ground_truth_flower_smoothness = $('input:radio[name=ground_truth_flower_smoothness]:checked').val();
 		var ground_truth_flower_real = $('input:radio[name=ground_truth_flower_real]:checked').val();
 		var ground_truth_flower_similarity = $('input:radio[name=ground_truth_flower_similarity]:checked').val();
-		
-        
-        var audio_mse_bwv1001ada_stability = $('input:radio[name=audio_mse_bwv1001ada_stability]:checked').val();
-		var audio_mse_bwv1001ada_smoothness = $('input:radio[name=audio_mse_bwv1001ada_smoothness]:checked').val();
-		var audio_mse_bwv1001ada_real = $('input:radio[name=audio_mse_bwv1001ada_real]:checked').val();
-		var audio_mse_bwv1001ada_similarity = $('input:radio[name=audio_mse_bwv1001ada_similarity]:checked').val();
-		
+
+
 		var audio_new_bwv1001ada_stability = $('input:radio[name=audio_new_bwv1001ada_stability]:checked').val();
 		var audio_new_bwv1001ada_smoothness = $('input:radio[name=audio_new_bwv1001ada_smoothness]:checked').val();
 		var audio_new_bwv1001ada_real = $('input:radio[name=audio_new_bwv1001ada_real]:checked').val();
 		var audio_new_bwv1001ada_similarity = $('input:radio[name=audio_new_bwv1001ada_similarity]:checked').val();
-		
-		var both_mse_bwv1001ada_stability = $('input:radio[name=both_mse_bwv1001ada_stability]:checked').val();
-		var both_mse_bwv1001ada_smoothness = $('input:radio[name=both_mse_bwv1001ada_smoothness]:checked').val();
-		var both_mse_bwv1001ada_real = $('input:radio[name=both_mse_bwv1001ada_real]:checked').val();
-		var both_mse_bwv1001ada_similarity = $('input:radio[name=both_mse_bwv1001ada_similarity]:checked').val();
 
 		var both_new_bwv1001ada_stability = $('input:radio[name=both_new_bwv1001ada_stability]:checked').val();
 		var both_new_bwv1001ada_smoothness = $('input:radio[name=both_new_bwv1001ada_smoothness]:checked').val();
 		var both_new_bwv1001ada_real = $('input:radio[name=both_new_bwv1001ada_real]:checked').val();
 		var both_new_bwv1001ada_similarity = $('input:radio[name=both_new_bwv1001ada_similarity]:checked').val();
 
-		var midi_mse_bwv1001ada_stability = $('input:radio[name=midi_mse_bwv1001ada_stability]:checked').val();
-		var midi_mse_bwv1001ada_smoothness = $('input:radio[name=midi_mse_bwv1001ada_smoothness]:checked').val();
-		var midi_mse_bwv1001ada_real = $('input:radio[name=midi_mse_bwv1001ada_real]:checked').val();
-		var midi_mse_bwv1001ada_similarity = $('input:radio[name=midi_mse_bwv1001ada_similarity]:checked').val();
-
 		var midi_new_bwv1001ada_stability = $('input:radio[name=midi_new_bwv1001ada_stability]:checked').val();
 		var midi_new_bwv1001ada_smoothness = $('input:radio[name=midi_new_bwv1001ada_smoothness]:checked').val();
 		var midi_new_bwv1001ada_real = $('input:radio[name=midi_new_bwv1001ada_real]:checked').val();
 		var midi_new_bwv1001ada_similarity = $('input:radio[name=midi_new_bwv1001ada_similarity]:checked').val();
+
+
+        var audio_new_bwv1001fug_stability = $('input:radio[name=audio_new_bwv1001fug_stability]:checked').val();
+		var audio_new_bwv1001fug_smoothness = $('input:radio[name=audio_new_bwv1001fug_smoothness]:checked').val();
+		var audio_new_bwv1001fug_real = $('input:radio[name=audio_new_bwv1001fug_real]:checked').val();
+		var audio_new_bwv1001fug_similarity = $('input:radio[name=audio_new_bwv1001fug_similarity]:checked').val();
 		
-		var ground_truth_bwv1001ada_stability = $('input:radio[name=ground_truth_bwv1001ada_stability]:checked').val();
-		var ground_truth_bwv1001ada_smoothness = $('input:radio[name=ground_truth_bwv1001ada_smoothness]:checked').val();
-		var ground_truth_bwv1001ada_real = $('input:radio[name=ground_truth_bwv1001ada_real]:checked').val();
-		var ground_truth_bwv1001ada_similarity = $('input:radio[name=ground_truth_bwv1001ada_similarity]:checked').val();
-		
-		
-		/*	
-        var midi_1_stability = $('input:radio[name=midi_1_stability]:checked').val();
-        var midi_1_smoothness = $('input:radio[name=midi_1_smoothness]:checked').val();
-        var midi_1_real = $('input:radio[name=midi_1_real]:checked').val();
-        var midi_1_similarity = $('input:radio[name=midi_1_similarity]:checked').val();	
-        var midi_2_stability = $('input:radio[name=midi_2_stability]:checked').val();
-        var midi_2_smoothness = $('input:radio[name=midi_2_smoothness]:checked').val();
-        var midi_2_real = $('input:radio[name=midi_2_real]:checked').val();
-        var midi_2_similarity = $('input:radio[name=midi_2_similarity]:checked').val();
-        var midi_3_stability = $('input:radio[name=midi_3_stability]:checked').val();
-        var midi_3_smoothness = $('input:radio[name=midi_3_smoothness]:checked').val();
-        var midi_3_real = $('input:radio[name=midi_3_real]:checked').val();
-        var midi_3_similarity = $('input:radio[name=midi_3_similarity]:checked').val();
-        var midi_4_stability = $('input:radio[name=midi_4_stability]:checked').val();
-        var midi_4_smoothness = $('input:radio[name=midi_4_smoothness]:checked').val();
-        var midi_4_real = $('input:radio[name=midi_4_real]:checked').val();
-        var midi_4_similarity = $('input:radio[name=midi_4_similarity]:checked').val();		
-        
-        var audio_1_stability = $('input:radio[name=audio_1_stability]:checked').val();
-        var audio_1_smoothness = $('input:radio[name=audio_1_smoothness]:checked').val();
-        var audio_1_real = $('input:radio[name=audio_1_real]:checked').val();
-        var audio_1_similarity = $('input:radio[name=audio_1_similarity]:checked').val();	
-        var audio_2_stability = $('input:radio[name=audio_2_stability]:checked').val();
-        var audio_2_smoothness = $('input:radio[name=audio_2_smoothness]:checked').val();
-        var audio_2_real = $('input:radio[name=audio_2_real]:checked').val();
-        var audio_2_similarity = $('input:radio[name=audio_2_similarity]:checked').val();
-        var audio_3_stability = $('input:radio[name=audio_3_stability]:checked').val();
-        var audio_3_smoothness = $('input:radio[name=audio_3_smoothness]:checked').val();
-        var audio_3_real = $('input:radio[name=audio_3_real]:checked').val();
-        var audio_3_similarity = $('input:radio[name=audio_3_similarity]:checked').val();
-        var audio_4_stability = $('input:radio[name=audio_4_stability]:checked').val();
-        var audio_4_smoothness = $('input:radio[name=audio_4_smoothness]:checked').val();
-        var audio_4_real = $('input:radio[name=audio_4_real]:checked').val();
-        var audio_4_similarity = $('input:radio[name=audio_4_similarity]:checked').val();	
-        
-        var midi_audio_1_stability = $('input:radio[name=midi_audio_1_stability]:checked').val();
-        var midi_audio_1_smoothness = $('input:radio[name=midi_audio_1_smoothness]:checked').val();
-        var midi_audio_1_real = $('input:radio[name=midi_audio_1_real]:checked').val();
-        var midi_audio_1_similarity = $('input:radio[name=midi_audio_1_similarity]:checked').val();
-        var midi_audio_2_stability = $('input:radio[name=midi_audio_2_stability]:checked').val();
-        var midi_audio_2_smoothness = $('input:radio[name=midi_audio_2_smoothness]:checked').val();
-        var midi_audio_2_real = $('input:radio[name=midi_audio_2_real]:checked').val();
-        var midi_audio_2_similarity = $('input:radio[name=midi_audio_2_similarity]:checked').val();
-        var midi_audio_3_stability = $('input:radio[name=midi_audio_3_stability]:checked').val();
-        var midi_audio_3_smoothness = $('input:radio[name=midi_audio_3_smoothness]:checked').val();
-        var midi_audio_3_real = $('input:radio[name=midi_audio_3_real]:checked').val();
-        var midi_audio_3_similarity = $('input:radio[name=midi_audio_3_similarity]:checked').val();
-        var midi_audio_4_stability = $('input:radio[name=midi_audio_4_stability]:checked').val();
-        var midi_audio_4_smoothness = $('input:radio[name=midi_audio_4_smoothness]:checked').val();
-        var midi_audio_4_real = $('input:radio[name=midi_audio_4_real]:checked').val();
-        var midi_audio_4_similarity = $('input:radio[name=midi_audio_4_similarity]:checked').val();
-		*/
+		var both_new_bwv1001fug_stability = $('input:radio[name=both_new_bwv1001fug_stability]:checked').val();
+		var both_new_bwv1001fug_smoothness = $('input:radio[name=both_new_bwv1001fug_smoothness]:checked').val();
+		var both_new_bwv1001fug_real = $('input:radio[name=both_new_bwv1001fug_real]:checked').val();
+		var both_new_bwv1001fug_similarity = $('input:radio[name=both_new_bwv1001fug_similarity]:checked').val();
+
+		var midi_new_bwv1001fug_stability = $('input:radio[name=midi_new_bwv1001fug_stability]:checked').val();
+		var midi_new_bwv1001fug_smoothness = $('input:radio[name=midi_new_bwv1001fug_smoothness]:checked').val();
+		var midi_new_bwv1001fug_real = $('input:radio[name=midi_new_bwv1001fug_real]:checked').val();
+		var midi_new_bwv1001fug_similarity = $('input:radio[name=midi_new_bwv1001fug_similarity]:checked').val();
+
 
         // preferred settings
         // var compare_datatype = $('input:radio[name=compare_datatype]:checked').val();
@@ -1814,26 +1315,20 @@
             "submit_datetime": submit_datetime,
             "music_exp": music_exp,
             "instrument": instrument,
-            "audio_mse_elgar": [audio_mse_elgar_stability, audio_mse_elgar_smoothness, audio_mse_elgar_real, audio_mse_elgar_similarity],
-			"audio_new_elgar": [audio_new_elgar_stability, audio_new_elgar_smoothness, audio_new_elgar_real, audio_new_elgar_similarity],
-			"both_mse_elgar": [both_mse_elgar_stability, both_mse_elgar_smoothness, both_mse_elgar_real, both_mse_elgar_similarity],
+            "audio_new_elgar": [audio_new_elgar_stability, audio_new_elgar_smoothness, audio_new_elgar_real, audio_new_elgar_similarity],
 			"both_new_elgar": [both_new_elgar_stability, both_new_elgar_smoothness, both_new_elgar_real, both_new_elgar_similarity],
-			"midi_mse_elgar": [midi_mse_elgar_stability, midi_mse_elgar_smoothness, midi_mse_elgar_real, midi_mse_elgar_similarity],
 			"midi_new_elgar": [midi_new_elgar_stability, midi_new_elgar_smoothness, midi_new_elgar_real, midi_new_elgar_similarity],
 			"ground_truth_elgar": [ground_truth_elgar_stability, ground_truth_elgar_smoothness, ground_truth_elgar_real, ground_truth_elgar_similarity],	
-			"audio_mse_flower": [audio_mse_flower_stability, audio_mse_flower_smoothness, audio_mse_flower_real, audio_mse_flower_similarity],
 			"audio_new_flower": [audio_new_flower_stability, audio_new_flower_smoothness, audio_new_flower_real, audio_new_flower_similarity],
-			"both_mse_flower": [both_mse_flower_stability, both_mse_flower_smoothness, both_mse_flower_real, both_mse_flower_similarity],
 			"both_new_flower": [both_new_flower_stability, both_new_flower_smoothness, both_new_flower_real, both_new_flower_similarity],
-			"midi_mse_flower": [midi_mse_flower_stability, midi_mse_flower_smoothness, midi_mse_flower_real, midi_mse_flower_similarity],
 			"midi_new_flower": [midi_new_flower_stability, midi_new_flower_smoothness, midi_new_flower_real, midi_new_flower_similarity],
 			"ground_truth_flower": [ground_truth_flower_stability, ground_truth_flower_smoothness, ground_truth_flower_real, ground_truth_flower_similarity],
-            "audio_mse_bwv1001ada": [audio_mse_bwv1001ada_stability, audio_mse_bwv1001ada_smoothness, audio_mse_bwv1001ada_real, audio_mse_bwv1001ada_similarity],
-			"audio_new_bwv1001ada": [audio_new_bwv1001ada_stability, audio_new_bwv1001ada_smoothness, audio_new_bwv1001ada_real, audio_new_bwv1001ada_similarity],
-			"both_mse_bwv1001ada": [both_mse_bwv1001ada_stability, both_mse_bwv1001ada_smoothness, both_mse_bwv1001ada_real, both_mse_bwv1001ada_similarity],
-			"both_new_bwv1001ada": [both_new_bwv1001ada_stability, both_new_bwv1001ada_smoothness, both_new_bwv1001ada_real, both_new_bwv1001ada_similarity],
-			"midi_mse_bwv1001ada": [midi_mse_bwv1001ada_stability, midi_mse_bwv1001ada_smoothness, midi_mse_bwv1001ada_real, midi_mse_bwv1001ada_similarity],
-			"midi_new_bwv1001ada": [midi_new_bwv1001ada_stability, midi_new_bwv1001ada_smoothness, midi_new_bwv1001ada_real, midi_new_bwv1001ada_similarity],
+            "audio_new_bwv1001fug": [audio_new_bwv1001fug_stability, audio_new_bwv1001fug_smoothness, audio_new_bwv1001fug_real, audio_new_bwv1001fug_similarity],
+			"both_new_bwv1001fug": [both_new_bwv1001fug_stability, both_new_bwv1001fug_smoothness, both_new_bwv1001fug_real, both_new_bwv1001fug_similarity],
+			"midi_new_bwv1001fug": [midi_new_bwv1001fug_stability, midi_new_bwv1001fug_smoothness, midi_new_bwv1001fug_real, midi_new_bwv1001fug_similarity],
+            "audio_new_bwv1001fug": [audio_new_bwv1001fug_stability, audio_new_bwv1001fug_smoothness, audio_new_bwv1001fug_real, audio_new_bwv1001fug_similarity],
+			"both_new_bwv1001fug": [both_new_bwv1001fug_stability, both_new_bwv1001fug_smoothness, both_new_bwv1001fug_real, both_new_bwv1001fug_similarity],
+			"midi_new_bwv1001fug": [midi_new_bwv1001fug_stability, midi_new_bwv1001fug_smoothness, midi_new_bwv1001fug_real, midi_new_bwv1001fug_similarity],
             /*
 			"compare_datatype": compare_datatype,
             "compare_hidden_size": compare_hidden_size,
