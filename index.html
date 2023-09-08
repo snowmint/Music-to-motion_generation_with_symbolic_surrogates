@@ -29,7 +29,15 @@
         color:#CFBFEF;
         text-decoration: none;
       }
-  
+
+      hr.style-two {
+        width: 80%;
+        border: 0;
+        height: 2px;
+        background-image: linear-gradient(to right, rgba(135, 139, 186, 0), rgba(74, 92, 163, 0.75), rgba(135, 139, 186, 0));
+      }
+
+        
       table{
         border-style:none;
         border-radius: 90px;
@@ -68,14 +76,8 @@
           width: 48%;
         }
       }
-      hr.style-two {
-        width: 80%;
-        border: 0;
-        height: 2px;
-        background-image: linear-gradient(to right, rgba(135, 139, 186, 0), rgba(74, 92, 163, 0.75), rgba(135, 139, 186, 0));
-      }
-
-      @media all and (max-width:900px) { 
+      
+      @media all and (max-width:1200px) { 
         .table_rwd_4cols{
           flex-wrap: wrap;
           width: 60%;
@@ -85,7 +87,61 @@
           width: 60%;
         }
       }
-      @media all and (max-width: 900px) {
+      @media all and (max-width: 1200px) {
+        table,
+        thead,
+        tbody,
+        th,
+        td,
+        tr {
+          width: 105%;
+          display: block;
+        }
+        td {
+          display: inline-block;
+          width: 40%;
+          margin-top: 5%;
+        }
+      }
+
+      @media all and (max-width:1200px) { 
+        .table_rwd_4cols{
+          flex-wrap: wrap;
+          width: 90%;
+        }
+        .table_rwd_2cols{
+          flex-wrap: wrap;
+          width: 90%;
+        }
+      }
+      @media all and (max-width: 1200px) {
+        table,
+        thead,
+        tbody,
+        th,
+        td,
+        tr {
+          width: 105%;
+          display: block;
+        }
+        td {
+          display: inline-block;
+          width: 40%;
+          margin-top: 5%;
+        }
+      }
+
+      @media all and (max-width:650px) { 
+        .table_rwd_4cols{
+          flex-wrap: wrap;
+          width: 60%;
+        }
+        .table_rwd_2cols{
+          flex-wrap: wrap;
+          width: 60%;
+        }
+      }
+      @media all and (max-width: 650px) {
         table,
         thead,
         tbody,
@@ -96,8 +152,11 @@
         }
         td {
           margin-top: 5%;
+          width: 100%;
         }
       }
+      
+      
     </style>
   </head>
   <body>
