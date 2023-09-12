@@ -5,6 +5,7 @@ import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 import pandas as pd
 import scipy
+import math
 
 import torch
 import torch.nn as nn
@@ -218,11 +219,15 @@ def main():
                     pck_02 = []
                     pck_001 = []
                     pck_002 = []
+                    pck_003 = []
+                    pck_004 = []
                     pck_005 = []
+                    pck_006 = []
                     fd = []
                     std = []
                     variance = []
                     new_loss = []
+                    irregularity = []
                     # bow = []
                     # bowx = []
                     # bowy = []
@@ -270,10 +275,22 @@ def main():
                         v_pck_02 = compute_pck(pred, targ, alpha=0.2)
                         v_pck_001 = compute_pck(pred, targ, alpha=0.01)
                         v_pck_002 = compute_pck(pred, targ, alpha=0.02)
+                        v_pck_003 = compute_pck(pred, targ, alpha=0.03)
+                        v_pck_004 = compute_pck(pred, targ, alpha=0.04)
                         v_pck_005 = compute_pck(pred, targ, alpha=0.05)
+                        v_pck_006 = compute_pck(pred, targ, alpha=0.06)
                         v_new_loss = customized_new_loss(pred, targ)
                         v_std = np.std(pred-targ)
                         v_variance = np.var(pred-targ)
+
+                        err = []
+                        for i in range(len(pred)):
+                            err.append(
+                                np.sqrt(np.sum(np.square(pred[i]-targ[i]))))
+                        err_array = np.asarray(err)
+                        print("len err", len(err_array))
+                        v_irregularity = np.sum(
+                            np.square(err_array[1:] - err_array[0:-1])) / np.sum(err_array)
 
                         # pred_rh_wrist = np.squeeze(pred[:, 11:12, :], axis=1)
                         # targ_rh_wrist = np.squeeze(targ[:, 11:12, :], axis=1)
@@ -289,11 +306,15 @@ def main():
                         pck_02.append(v_pck_02)
                         pck_001.append(v_pck_001)
                         pck_002.append(v_pck_002)
+                        pck_003.append(v_pck_003)
+                        pck_004.append(v_pck_004)
                         pck_005.append(v_pck_005)
+                        pck_006.append(v_pck_006)
                         fd.append(v_fd)
                         new_loss.append(v_new_loss)
                         std.append(v_std)
                         variance.append(v_variance)
+                        irregularity.append(v_irregularity)
 
                         # bowx.append(v_bow_acc[0])
                         # bowy.append(v_bow_acc[1])
@@ -320,15 +341,22 @@ def main():
                         pck_001)
                     test_result[data_type][file_code]["Avg_Pck_002"] = np.mean(
                         v_pck_002)
+                    test_result[data_type][file_code]["Avg_Pck_003"] = np.mean(
+                        pck_003)
+                    test_result[data_type][file_code]["Avg_Pck_004"] = np.mean(
+                        v_pck_004)
                     test_result[data_type][file_code]["Avg_Pck_005"] = np.mean(
                         v_pck_005)
+                    test_result[data_type][file_code]["Avg_Pck_006"] = np.mean(
+                        v_pck_006)
                     test_result[data_type][file_code]["Avg_new_loss"] = np.mean(
                         new_loss)
                     test_result[data_type][file_code]["Avg_std"] = np.mean(
                         std)
                     test_result[data_type][file_code]["Avg_variance"] = np.mean(
                         variance)
-
+                    test_result[data_type][file_code]["Avg_irregularity"] = np.mean(
+                        irregularity)
                     test_result[data_type][file_code]["Avg_FD"] = np.mean(fd)
 
                     # test_result[data_type][file_code]["Avg_Bowing_Attack_accuracyX"] = np.mean(
