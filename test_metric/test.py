@@ -163,7 +163,7 @@ def calculate_fid(pred_arr, label_arr):
 def main():
     # v_train = ['01', '02', '03', '04', '05']
     hidden_size_change = ['1024']
-    NoY_list = ["no"] #, "with"
+    NoY_list = ["no"]  # , "with"
     num_epochs_change = ['300', '500']
     # ['MIDI'] #['MIDI', 'Audio', 'MIDI+Audio']
     input_data_types = ['MIDI', 'Audio', 'MIDI+Audio']
@@ -216,6 +216,9 @@ def main():
                     l2_hand = []
                     pck_01 = []
                     pck_02 = []
+                    pck_001 = []
+                    pck_002 = []
+                    pck_005 = []
                     fd = []
                     std = []
                     variance = []
@@ -265,6 +268,9 @@ def main():
                             np.square(pred[:, 8:13, :] - targ[:, 8:13, :]))
                         v_pck_01 = compute_pck(pred, targ, alpha=0.1)
                         v_pck_02 = compute_pck(pred, targ, alpha=0.2)
+                        v_pck_001 = compute_pck(pred, targ, alpha=0.01)
+                        v_pck_002 = compute_pck(pred, targ, alpha=0.02)
+                        v_pck_005 = compute_pck(pred, targ, alpha=0.05)
                         v_new_loss = customized_new_loss(pred, targ)
                         v_std = np.std(pred-targ)
                         v_variance = np.var(pred-targ)
@@ -281,6 +287,9 @@ def main():
                         l2_hand.append(v_l2_hand)
                         pck_01.append(v_pck_01)
                         pck_02.append(v_pck_02)
+                        pck_001.append(v_pck_001)
+                        pck_002.append(v_pck_002)
+                        pck_005.append(v_pck_005)
                         fd.append(v_fd)
                         new_loss.append(v_new_loss)
                         std.append(v_std)
@@ -292,7 +301,7 @@ def main():
                         # bow.append(v_bow_acc[3])
                         # cosine.append(v_cosine)
                     # print("FD:", fd)
-                    avg_pck = (np.mean(pck_01) + np.mean(pck_02))*0.5
+                    avg_pck = (np.mean(pck_01) + np.mean(pck_02))*0.5  # TODO
                     # print(data_type + "_" + file_code + ' Avg_L1_loss: %f' %np.mean(l1))
                     # print(data_type + "_" + file_code + ' Avg_L1_hand_loss: %f' %np.mean(l1_hand))
                     # print(data_type + "_" + file_code + ' Avg_Pck: %f' %avg_pck)
@@ -307,6 +316,12 @@ def main():
                     test_result[data_type][file_code]["Avg_L2_hand_loss"] = np.mean(
                         l2_hand)
                     test_result[data_type][file_code]["Avg_Pck"] = avg_pck
+                    test_result[data_type][file_code]["Avg_Pck_001"] = np.mean(
+                        pck_001)
+                    test_result[data_type][file_code]["Avg_Pck_002"] = np.mean(
+                        v_pck_002)
+                    test_result[data_type][file_code]["Avg_Pck_005"] = np.mean(
+                        v_pck_005)
                     test_result[data_type][file_code]["Avg_new_loss"] = np.mean(
                         new_loss)
                     test_result[data_type][file_code]["Avg_std"] = np.mean(
