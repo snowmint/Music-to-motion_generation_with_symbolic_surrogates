@@ -163,7 +163,7 @@ def calculate_fid(pred_arr, label_arr):
 def main():
     # v_train = ['01', '02', '03', '04', '05']
     hidden_size_change = ['1024']
-    NoY_list = ["no"] #, "with"
+    NoY_list = ["no"]  # , "with"
     num_epochs_change = ['300', '500']
     # ['MIDI'] #['MIDI', 'Audio', 'MIDI+Audio']
     input_data_types = ['MIDI', 'Audio', 'MIDI+Audio']
@@ -178,7 +178,7 @@ def main():
     id = '01'
     for test_piece in test_pieces:
         # load_pickle
-        gt_data_input = open("./output_eval/Ground_truth/vio" +
+        gt_data_input = open("./output_eval_faster/Ground_truth/vio" +
                              id+"_" + test_piece + "_motion_data.pkl", 'rb')
         gt_data = pickle.load(gt_data_input)
         gt_data_input.close()
@@ -193,9 +193,9 @@ def main():
         for have_annotation in NoY_list:
             for hs in hidden_size_change:
                 for num_epoch in num_epochs_change:
-                    this_dir = "./output_eval/"+data_type+"/"
+                    this_dir = "./output_eval_faster/"+data_type+"/"
                     filenames = next(os.walk(this_dir), (None, None, []))[2]
-                    # print("filenames:", filenames)
+                    print("filenames:", filenames)
                     # find filename include "no_anno][total300_hs1024", "total100_hs256"
                     file_code = str(have_annotation +
                                     "_anno][total"+num_epoch+"_hs"+hs)
@@ -331,7 +331,8 @@ def main():
     for data_type in input_data_types:
         print("Data type [", data_type, "]:")
         test_result_df = pd.DataFrame(test_result[data_type]).T
-        test_result_df.to_csv(str('[' + data_type + ']_test_result.csv'))
+        test_result_df.to_csv(
+            str('[' + data_type + ']_test_result_faster.csv'))
         print(test_result_df)
 
 
