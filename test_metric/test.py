@@ -121,13 +121,6 @@ def customized_new_loss(output, target):
     time_loss = time_wise_loss_fn(output, target)
     dim_loss = dim_wise_loss_fn(output, target)
 
-    # print("time_loss:", time_loss)
-    # print("dim_loss:", dim_loss)
-    # print("mse_loss:", mse_loss)
-    # val_time_loss_list.append(time_loss.cpu().item())
-    # val_dim_loss_list.append(dim_loss.cpu().item())
-    # val_mse_loss_list.append(mse_loss.cpu().item())
-
     segment_loss = (w1_time * time_loss) + \
         (w2_dim * dim_loss) + (w3_mse * mse_loss)
     return segment_loss
