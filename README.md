@@ -66,8 +66,8 @@ Since currently one song is considered one data entry, by setting the dataset to
 
 
 ## 5. dataset, preprocessed training data, saved model 
-###需要下載的檔案列於下方：
-###The files that need to be downloaded are listed below:
+### 需要下載的檔案列於下方：
+### The files that need to be downloaded are listed below:
 
 original dataset: https://drive.google.com/drive/folders/1pSNXDOfcki7-Iw7w_Ws15lzc2cdJ5z7H?usp=drive_link
 
