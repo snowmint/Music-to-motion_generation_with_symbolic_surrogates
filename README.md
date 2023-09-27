@@ -4,7 +4,7 @@ Demo webpage: https://snowmint.github.io/Music-to-motion_generation_with_symboli
 <table class="table_rwd_4cols" width="100%" height="100%" cellspacing="30px">
    <tr>
     <td>[![Video Label](http://img.youtube.com/vi/sYFTO1VCMKs/0.jpg)](https://www.youtube.com/embed/sYFTO1VCMKs)<br><br>MSE-loss<br/>[Validation set] Elgar salut d'amour</a></td>
-    <td><iframe width="100%" height="250" style="border-radius: 30pt" src="https://www.youtube.com/embed/5Y48O8z1u-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>MSE-loss<br/>[Validation set] 雨夜花</a></td>
+    <td>[![Video Label](http://img.youtube.com/vi/5Y48O8z1u-4/0.jpg)](https://www.youtube.com/embed/5Y48O8z1u-4)<br><br>MSE-loss<br/>[Validation set] 雨夜花</a></td>
   </tr>
 </table>
 <table class="table_rwd_4cols" width="100%" height="100%" cellspacing="30px">
