@@ -24,11 +24,11 @@ For the combination of MIDI and audio data <br/>
 
 ## 2-1. train_pure_LSTM_symbolic_cross_validation_<...>.ipynb
 包含訓練和測試的程式，超參數也定義於此。在此改成單純使用 LSTM 進行訓練。使用 new loss 作為 loss function。 <br/>
-This includes the training and testing program, and define the hyperparameters here. Modify it to use only LSTM for training and utilize 'new loss' as the loss function.
+This file contains the training and testing program and defines the hyperparameters here. Modify it to use only LSTM for training and utilize 'new loss' as the loss function.
 
 ## 2-2. train_pure_LSTM_symbolic_cross_validation_mse_<...>.ipynb
 包含訓練和測試的程式，超參數也定義於此。在此改成單純使用 LSTM 進行訓練。使用 MSE loss 作為 loss function。 <br/>
-This includes the training and testing program, and define the hyperparameters here. Modify it to use only LSTM for training and utilize 'MSE loss' as the loss function.
+This file contains the training and testing program and defines the hyperparameters here. Modify it to use only LSTM for training and utilize 'MSE loss' as the loss function.
 
 ## 3. model.py
 這份程式實作了 LSTM encoder-decoder 模型。雖然訓練沒有成效，但保留做參照。 <br/>
