@@ -43,15 +43,15 @@ Dataset access define: <br/>
 
 `init function`:  <br/>
 只給予訓練資料 pickle file 的路徑。為了避免在 init function 直接 load 全部的訓練與驗證資料進 GPU 記憶體導致 Out-of-Memory，因此在此只給予路徑，直到 get_item function 時才真正讀入訓練資料。 <br/>
-This function provides only the path to the training data's pickle file. To avoid loading all training and validation data directly into GPU memory in the init function, which could lead to Out-of-Memory issues, only the paths are provided here. The actual loading of training data occurs in the get_item function. <br/>
+This function provides only the path to the training data's pickle file as a measure to avoid loading all training and validation data directly into GPU memory which causes the Out-of-Memory issues. The actual loading of the training data is performed in the get_item function.  <br/>
 
 `get_item function`:  <br/>
 在指定的訓練資料路徑讀取 pickle file，並隨機在歌曲內挑選長度為 512 的片段。 <br/>
 This function reads the pickle file from the specified training data path and randomly selects segments of length 512 within the pieces. <br/>
   
 `len function`:  <br/>
-由於目前一首歌曲算一筆資料，透過設定 dataset 需要 100 倍的資料量，便可以使每一首歌都會隨機取用 100 個隨機片段。 <br/>
-This function since currently one song is considered one data entry, by setting the dataset to require 100 times the data amount, each piece will randomly utilize 100 segments. <br/>
+由於目前一首歌曲算一筆資料，如果一首歌只取用一個 512 長度的片段，將會大幅浪費資料。因此透過設定 dataset 長度為需要每一首歌提供 100 個隨機片段的資料量，便可以使每一首歌都會隨機取用 100 個隨機片段，增加訓練資料的豐富性。 <br/>
+This function since currently one song is considered one data entry, using only a single 512-length segment from a song would lead to significant data wastage. Therefore, by setting the dataset length to require data equivalent to 100 random segments from each song, every song will have 100 random segments selected, enhancing the richness of the training data. <br/>
 
 
 ## 5. dataset, preprocessed training data, saved model 
