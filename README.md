@@ -1,6 +1,9 @@
 # MIDI_to_Motion
 Demo webpage: https://snowmint.github.io/Music-to-motion_generation_with_symbolic_surrogates/index.html
 
+Colab training: https://drive.google.com/file/d/1nPChmQX_tWrZpCSx0Wa2OsGraaggrl14/view?usp=sharing
+Colab prediction: 
+
 ## 1. data_preprocess_<...>.py 
 (原則上不用執行。除非有修改 code ，否則我已經運行過，並儲存 pickle file 在指定目錄下了。)
 
@@ -49,8 +52,13 @@ original dataset: https://drive.google.com/drive/folders/1pSNXDOfcki7-Iw7w_Ws15l
 [without annotation training model save] https://drive.google.com/drive/folders/1w74s7XUKmm9xd5qLQS5smMEWApb9Ykic?usp=drive_link
 [with annotation training model save] https://drive.google.com/drive/folders/1I7v3dIdYWISuL-GcFRlO7RgcZpJss8-V?usp=drive_link
 
-## 6. BWV1001 folder
+## 6. test_metric folder
+將儲存於 output_eval 內的 pkl 執行以下程式，進行 evaluation。
+`python test.py`
+`python test_faster.py`
+
+## 7. BWV1001 folder
 For testing phase.
 
-## 7. Survey_20230908 
+## 8. Survey_20230908 folder
 問卷調查的網頁與收集到的評分數據。
