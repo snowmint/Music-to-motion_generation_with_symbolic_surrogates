@@ -54,7 +54,9 @@ original dataset: https://drive.google.com/drive/folders/1pSNXDOfcki7-Iw7w_Ws15l
 
 ## 6. test_metric folder
 將儲存於 output_eval 內的 pkl 執行以下程式，進行 evaluation。
+
 `python test.py`
+
 `python test_faster.py`
 
 ## 7. BWV1001 folder
