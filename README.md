@@ -2,7 +2,6 @@
 Demo webpage: https://snowmint.github.io/Music-to-motion_generation_with_symbolic_surrogates/index.html
 
 Colab training: https://drive.google.com/file/d/1nPChmQX_tWrZpCSx0Wa2OsGraaggrl14/view?usp=sharing
-Colab prediction: 
 
 ## 1. data_preprocess_<...>.py 
 (原則上不用執行。除非有修改 code ，否則我已經運行過，並儲存 pickle file 在指定目錄下了。)
