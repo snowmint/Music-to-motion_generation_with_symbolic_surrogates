@@ -1,17 +1,33 @@
 # MIDI_to_Motion
-Demo webpage: https://snowmint.github.io/Music-to-motion_generation_with_symbolic_surrogates/index.html
+Demo webpage for more details: https://snowmint.github.io/Music-to-motion_generation_with_symbolic_surrogates/index.html
 
 <table class="table_rwd_4cols" width="100%" height="100%" cellspacing="30px">
    <tr>
-    <td>[![Video Label](http://img.youtube.com/vi/sYFTO1VCMKs/0.jpg)](https://www.youtube.com/embed/sYFTO1VCMKs)<br><br>MSE-loss<br/>[Validation set] Elgar salut d'amour</a></td>
-    <td>[![Video Label](http://img.youtube.com/vi/5Y48O8z1u-4/0.jpg)](https://www.youtube.com/embed/5Y48O8z1u-4)<br><br>MSE-loss<br/>[Validation set] 雨夜花</a></td>
-  </tr>
+       <td>
+
+https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/assets/7868828/833968ce-3390-4c86-a647-0bf33ee0375b
+
+          <br><br>New-loss<br/>[Validation set] Elgar salut d'amour</a></td>
+      <td>
+
+https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/assets/7868828/f0c7a05e-14d3-4fc3-b596-7ef6ec6a703c
+
+         <br><br>New-loss<br/>[Validation set] 雨夜花</a></td>
+     </tr>
 </table>
 <table class="table_rwd_4cols" width="100%" height="100%" cellspacing="30px">
    <tr>
-    <td><iframe width="100%" height="250" style="border-radius: 30pt" src="https://www.youtube.com/embed/IcSr91uEw0k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>MSE-loss<br/>[Test set] BWV1001 Adagio</a></td>
-    <td><iframe width="100%" height="250" style="border-radius: 30pt" src="https://www.youtube.com/embed/Nj-ywHH0FKM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>MSE-loss<br/>[Test set] BWV1001 Adagio</a></td>
-  </tr>
+       <td>
+
+https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/assets/7868828/5f50071e-4f12-49b3-84c8-bd5f8503ddd4
+       
+          <br><br>New-loss<br/>[Test set] BWV1001 Adagio</a></td>
+       <td>
+
+https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/assets/7868828/dd959f5f-b68b-4c10-bd1e-5ea7f45c4ae2
+
+         <br><br>New-loss<br/>[Test set] BWV1001 Adagio</a></td>
+     </tr>
 </table>
 Colab training: https://drive.google.com/file/d/1nPChmQX_tWrZpCSx0Wa2OsGraaggrl14/view?usp=sharing
 
