@@ -71,10 +71,10 @@ Original dataset: https://drive.google.com/drive/folders/1pSNXDOfcki7-Iw7w_Ws15l
 ## 6. test_metric folder
 
 執行 predict_draw.ipynb 程式可以使用預先儲存好的 model (存在 model_save 下) 進行預測並繪製影片，這份程式會將 evaluation 所需的預測資料儲存至 output_eval 資料夾中。 <br/>
-Executing the 'predict_draw.ipynb' program allows you to make predictions and generate videos using a pre-saved model (located in the 'model_save' directory). This program will store the predicted data required for evaluation in the 'output_eval' folder.
+Executing the 'predict_draw.ipynb' file allows you to make predictions and generate videos using a pre-saved model (located in the 'model_save' directory). This stores the predicted data required for evaluation in the 'output_eval' folder. <br/>
 
 將儲存於 output_eval 內的 pkl 複製到 test_metric 目錄下，test_metric 中有 output_eval 資料夾，其中細分為 MIDI, Audio 和 Both 的資料夾，將相對應的 pkl 檔案複製到相應的目錄，即可執行以下程式，進行 evaluation。 <br/>
-Copy the .pkl files stored in the 'output_eval' directory to the 'test_metric' directory. Inside 'test_metric,' there are subdirectories for 'MIDI,' 'Audio,' and 'Both.' Copy the corresponding .pkl files to their respective directories, and you can then execute the following program for evaluation.
+Copy the .pkl files stored in the 'output_eval' directory to the 'test_metric' directory. Inside 'test_metric,' there are subdirectories for 'MIDI,' 'Audio,' and 'Both.' Copy the corresponding .pkl files to their respective directories, and you can then execute the following program for evaluation. <br/>
 
 `python test.py`
 
@@ -89,4 +89,4 @@ Additional test data for the testing phase.
 The webpage for the questionnaire survey and the collected rating data.
 
 ## 9. 完整目錄所需的資料夾與檔案
-<img src="https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/blob/main/directory_view.png?raw=true" width="300">
+<img src="https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/blob/main/directory_view.png?raw=true" width="600">
