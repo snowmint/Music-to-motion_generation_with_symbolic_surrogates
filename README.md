@@ -55,7 +55,7 @@ Since one song is considered one data entry, using only a single 512-length segm
 
 ## 5. dataset, preprocessed training data, saved model 
 需要下載的檔案列於下方： <br/>
-The files that need to be downloaded are listed below: <br/>
+The required files are listed below: <br/>
 
 Original dataset: https://drive.google.com/drive/folders/1pSNXDOfcki7-Iw7w_Ws15lzc2cdJ5z7H?usp=drive_link
 
@@ -65,8 +65,8 @@ Original dataset: https://drive.google.com/drive/folders/1pSNXDOfcki7-Iw7w_Ws15l
 
 [1.5x faster motion preprossed data] https://drive.google.com/drive/folders/1WHRu9WMj9MkW79JHpEqzOyLNBvv0SxOA?usp=drive_link <br/>
 
-[without annotation training model save] https://drive.google.com/drive/folders/1w74s7XUKmm9xd5qLQS5smMEWApb9Ykic?usp=drive_link <br/>
-[with annotation training model save] https://drive.google.com/drive/folders/1I7v3dIdYWISuL-GcFRlO7RgcZpJss8-V?usp=drive_link
+[The saved training model(without annotation)] https://drive.google.com/drive/folders/1w74s7XUKmm9xd5qLQS5smMEWApb9Ykic?usp=drive_link <br/>
+[The saved training model(with annotation)] https://drive.google.com/drive/folders/1I7v3dIdYWISuL-GcFRlO7RgcZpJss8-V?usp=drive_link
 
 ## 6. test_metric folder
 
