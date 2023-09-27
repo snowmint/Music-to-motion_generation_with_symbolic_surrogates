@@ -51,3 +51,6 @@ original dataset: https://drive.google.com/drive/folders/1pSNXDOfcki7-Iw7w_Ws15l
 
 ## 6. BWV1001 folder
 For testing phase.
+
+## 7. Survey_20230908 
+問卷調查的網頁與收集到的評分數據。
