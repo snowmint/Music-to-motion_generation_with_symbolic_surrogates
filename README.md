@@ -49,8 +49,8 @@ This file contains the training and testing program and defines the hyperparamet
 This file contains the training and testing program and defines the hyperparameters here. Modify it to use only LSTM for training and utilize 'MSE loss' as the loss function.
 
 ## 3. model.py
-這份程式實作了 LSTM encoder-decoder 模型。雖然訓練沒有成效，但保留做參照。 <br/>
-This code implements an LSTM encoder-decoder model. Although the training was not practical, it is kept for reference.
+這份程式實作了 LSTM encoder-decoder 模型。保留做參照。 <br/>
+This code implements an LSTM encoder-decoder model. It is kept for reference.
 
 ## 4. data_loader.py
 定義 PyTorch Data loader 如何取用訓練資料。 <br/>
