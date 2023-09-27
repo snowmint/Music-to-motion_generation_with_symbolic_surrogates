@@ -5,7 +5,7 @@ Colab training: https://drive.google.com/file/d/1nPChmQX_tWrZpCSx0Wa2OsGraaggrl1
 
 ## 1. data_preprocess_<...>.py 
 (原則上不用執行。除非有修改 code ，否則我已經運行過，並儲存成 pickle file ，下載連結在 step 5。)
-(There is no need for you to do it. Unless there are any customized code modifications you made, I have already run it and saved it as a pickle file, the download link can be found in step 5 below.)
+(There is no need for you to do it. Unless there are any customized code modifications you made, I have already run it and saved it as a pickle file. The download link can be found in step 5 below.)
 
 `python data_preprocess_<...>.py`
 
@@ -39,7 +39,7 @@ This code implements an LSTM encoder-decoder model. Although the training was no
 定義 PyTorch Data loader 如何取用訓練資料。 <br/>
 Define how to access the training data for the PyTorch data-loader.
 
-Dataset: <br/>
+Dataset access define: <br/>
 
 `init function`:  <br/>
 只給予訓練資料 pickle file 的路徑。 <br/>
