@@ -63,3 +63,6 @@ original dataset: https://drive.google.com/drive/folders/1pSNXDOfcki7-Iw7w_Ws15l
 
 ## 8. Survey_20230908 folder
 問卷調查的網頁與收集到的評分數據。
+
+## 9. 完整目錄所需的資料夾與檔案
+![picture of directory view](https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/blob/main/directory_view.png?raw=true)
