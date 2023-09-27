@@ -37,14 +37,13 @@ This code implements an LSTM encoder-decoder model. Although the training was no
 
 ## 4. data_loader.py
 定義 PyTorch Data loader 如何取用訓練資料。 <br/>
-Define how the PyTorch data-loader to access the training data.
+Define how to access the training data for the PyTorch data-loader.
 
 Dataset: <br/>
 
 `init function`:  <br/>
 只給予訓練資料 pickle file 的路徑。 <br/>
 Only provide the path to the training data's pickle file. <br/>
-
 
 `get_item function`:  <br/>
 在指定的訓練資料路徑讀取 pickle file，並隨機在歌曲內挑選長度為 512 的片段。 <br/>
@@ -59,11 +58,11 @@ Since currently one song is considered one data entry, by setting the dataset to
 需要下載的檔案列於下方： <br/>
 The files that need to be downloaded are listed below: <br/>
 
-original dataset: https://drive.google.com/drive/folders/1pSNXDOfcki7-Iw7w_Ws15lzc2cdJ5z7H?usp=drive_link
+Original dataset: https://drive.google.com/drive/folders/1pSNXDOfcki7-Iw7w_Ws15lzc2cdJ5z7H?usp=drive_link
 
-[MIDI preprossed data] https://drive.google.com/drive/folders/1LvVZC5pI3wnX1bKNrIp4DDRQyhTwgtxR?usp=drive_link <br/>
-[Audio preprossed data] https://drive.google.com/drive/folders/13TQJBi7HOxOt2sKmx8ldwHRfe4jxZuZe?usp=drive_link <br/>
-[MIDI+Audio preprossed data] https://drive.google.com/drive/folders/1OZ8lCXvU-tA6ikzkV-o9PSvVbf9a8mer?usp=drive_link <br/>
+[MIDI preprocessed data] https://drive.google.com/drive/folders/1LvVZC5pI3wnX1bKNrIp4DDRQyhTwgtxR?usp=drive_link <br/>
+[Audio preprocessed data] https://drive.google.com/drive/folders/13TQJBi7HOxOt2sKmx8ldwHRfe4jxZuZe?usp=drive_link <br/>
+[MIDI+Audio preprocessed data] https://drive.google.com/drive/folders/1OZ8lCXvU-tA6ikzkV-o9PSvVbf9a8mer?usp=drive_link <br/>
 
 [1.5x faster motion preprossed data] https://drive.google.com/drive/folders/1WHRu9WMj9MkW79JHpEqzOyLNBvv0SxOA?usp=drive_link <br/>
 
