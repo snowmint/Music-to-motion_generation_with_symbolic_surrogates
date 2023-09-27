@@ -36,6 +36,7 @@ Dataset:
 `len function`: 由於目前一首歌曲算一筆資料，透過設定 dataset 需要 100 倍的資料量，便可以使每一首歌都會隨機取用 100 個隨機片段。
 
 ## 5. dataset, preprocessed training data, saved model 
+需要下載的檔案列於下方：
 
 original dataset: https://drive.google.com/drive/folders/1pSNXDOfcki7-Iw7w_Ws15lzc2cdJ5z7H?usp=drive_link
 
