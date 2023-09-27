@@ -59,7 +59,7 @@ original dataset: https://drive.google.com/drive/folders/1pSNXDOfcki7-Iw7w_Ws15l
 `python test_faster.py`
 
 ## 7. BWV1001 folder
-For testing phase.
+用於 testing 階段的額外資料。
 
 ## 8. Survey_20230908 folder
 問卷調查的網頁與收集到的評分數據。
