@@ -21,7 +21,7 @@ Colab prediction:
 ## 2-1. train_pure_LSTM_symbolic_cross_validation_<...>.ipynb
 包含訓練和測試的程式，超參數也定義於此。在此改成單純使用 LSTM 進行訓練。使用 new loss 作為 loss function。
 
-# 2-2. train_pure_LSTM_symbolic_cross_validation_mse_<...>.ipynb
+## 2-2. train_pure_LSTM_symbolic_cross_validation_mse_<...>.ipynb
 包含訓練和測試的程式，超參數也定義於此。在此改成單純使用 LSTM 進行訓練。使用 MSE loss 作為 loss function。
 
 ## 3. model.py
