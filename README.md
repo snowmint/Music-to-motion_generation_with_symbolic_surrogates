@@ -1,22 +1,28 @@
 # MIDI_to_Motion
+Demo webpage: https://snowmint.github.io/Music-to-motion_generation_with_symbolic_surrogates/index.html
 
-## 1. data_preprocess.py
+## 1. data_preprocess_<...>.py 
 (原則上不用執行。除非有修改 code ，否則我已經運行過，並儲存 pickle file 在指定目錄下了。)
 
-`python data_preprocess.py`
+`python data_preprocess_<...>.py`
 
-接著更新前處理後檔案目錄至 midi_list.txt 中：
+接著更新前處理後檔案目錄至 data_list_<...>.txt 中：
 
-`ls ./preprocessed_data_save/midi/ | awk '{print "preprocessed_data_save/midi/" $0 }' >> midi_list.txt`
-`ls ./preprocessed_data_save_new/midi/ | awk '{print "preprocessed_data_save/midi/" $0 }' >> midi_list_symbolic.txt`
-## 2-1. train.ipynb
-包含訓練和測試的程式，超參數也定義於此。
+`ls ./preprocessed_data_save_<...>/midi/ | awk '{print "preprocessed_data_save_<...>/midi/" $0 }' >> data_list_<...>.txt`
 
-## 2-2. train_pure_LSTM.ipynb
-包含訓練和測試的程式，超參數也定義於此。在此改成單純使用 LSTM 進行訓練。
+`ls ./preprocessed_data_save_cross/midi/ | awk '{print "preprocessed_data_save_cross/midi/" $0 }' >> midi_list_symbolic_cross.txt`
+`ls ./preprocessed_data_save_cross_aud/audio/ | awk '{print "preprocessed_data_save_cross_aud/audio/" $0 }' >> data_list_symbolic_cross_audio.txt`
+`ls ./data_preprocess_symbolic_cross_both/all/ | awk '{print "data_preprocess_symbolic_cross_both/all/" $0 }' >> data_list_symbolic_cross_both.txt`
+
+
+## 2-1. train_pure_LSTM_symbolic_cross_validation_<...>.ipynb
+包含訓練和測試的程式，超參數也定義於此。在此改成單純使用 LSTM 進行訓練。使用 new loss 作為 loss function。
+
+# 2-2. train_pure_LSTM_symbolic_cross_validation_mse_<...>.ipynb
+包含訓練和測試的程式，超參數也定義於此。在此改成單純使用 LSTM 進行訓練。使用 MSE loss 作為 loss function。
 
 ## 3. model.py
-這份程式實作了 LSTM encoder-decoder 模型。
+這份程式實作了 LSTM encoder-decoder 模型。訓練沒有成效，保留做參照。
 
 ## 4. data_loader.py
 定義 PyTorch Data loader 如何取用訓練資料。
@@ -29,25 +35,15 @@ Dataset:
   
 `len function`: 由於目前一首歌曲算一筆資料，透過設定 dataset 需要 100 倍的資料量，便可以使每一首歌都會隨機取用 100 個隨機片段。
 
-## 5. test result
+## 5. dataset, 
 
-### Only LSTM (Best result is been store at ./test_result folder)
-100 epoch 訓練後的測試結果：（66首對齊資料）
-[37min]100epoch_66align_data_MSEloss
-https://drive.google.com/drive/folders/163lnPcq9v-q_RQ-iciJbmeOvHUMCfrQq?usp=drive_link
+original dataset: https://drive.google.com/drive/folders/1pSNXDOfcki7-Iw7w_Ws15lzc2cdJ5z7H?usp=drive_link
 
-500 epoch 訓練後的測試結果：（66首對齊資料）
-[187min]500epoch_66align_data_MSEloss
-https://drive.google.com/drive/folders/1KamwniIZHCUTggkZypHPqkTxIy9CAN6T?usp=drive_link
+[MIDI preprossed data] https://drive.google.com/drive/folders/1LvVZC5pI3wnX1bKNrIp4DDRQyhTwgtxR?usp=drive_link
+[Audio preprossed data] https://drive.google.com/drive/folders/13TQJBi7HOxOt2sKmx8ldwHRfe4jxZuZe?usp=drive_link
+[MIDI+Audio preprossed data] https://drive.google.com/drive/folders/1OZ8lCXvU-tA6ikzkV-o9PSvVbf9a8mer?usp=drive_link
 
-### Enc-Dec
-100 epoch 訓練後的測試結果：（22首對齊資料）
-[22min]100epoch_(custom_loss)random_pick_2200_datasample_per_epoch
-https://drive.google.com/drive/folders/1SobWLwwDAmP6CrF-iHaoQJWU0ozB4pq6?usp=drive_link
+[1.5x faster motion preprossed data] https://drive.google.com/drive/folders/1WHRu9WMj9MkW79JHpEqzOyLNBvv0SxOA?usp=drive_link
 
-100 epoch 訓練後的測試結果：（66首對齊資料）
-[39min]100epoch_66align_data_custom_loss
-https://drive.google.com/drive/folders/1x2qSkkf6GJuF_zAtrE4dYrkBRmIAH58w?usp=drive_link
-
-100 epoch 訓練後的測試結果：（110首對齊資料）
-<待補上>
+[without annotation training model save] https://drive.google.com/drive/folders/1w74s7XUKmm9xd5qLQS5smMEWApb9Ykic?usp=drive_link
+[with annotation training model save] https://drive.google.com/drive/folders/1I7v3dIdYWISuL-GcFRlO7RgcZpJss8-V?usp=drive_link
