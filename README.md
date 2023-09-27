@@ -89,4 +89,4 @@ Additional test data for the testing phase.
 The webpage for the questionnaire survey and the collected rating data.
 
 ## 9. 完整目錄所需的資料夾與檔案
-![picture of directory view](https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/blob/main/directory_view.png?raw=true)
+<img src="[https://your-image-url.type](https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/blob/main/directory_view.png?raw=true)https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/blob/main/directory_view.png?raw=true" width="300">
