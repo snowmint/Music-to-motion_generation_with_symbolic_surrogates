@@ -13,12 +13,15 @@ Colab training: https://drive.google.com/file/d/1nPChmQX_tWrZpCSx0Wa2OsGraaggrl1
 `ls ./preprocessed_data_save_<...>/midi/ | awk '{print "preprocessed_data_save_<...>/midi/" $0 }' >> data_list_<...>.txt`
 
 For MIDI data
+
 `ls ./preprocessed_data_save_cross/midi/ | awk '{print "preprocessed_data_save_cross/midi/" $0 }' >> midi_list_symbolic_cross.txt`
 
 For audio data
+
 `ls ./preprocessed_data_save_cross_aud/audio/ | awk '{print "preprocessed_data_save_cross_aud/audio/" $0 }' >> data_list_symbolic_cross_audio.txt`
 
 For the combination of MIDI and audio data
+
 `ls ./preprocessed_data_save_cross_both/all/ | awk '{print "preprocessed_data_save_cross_both/all/" $0 }' >> data_list_symbolic_cross_both.txt`
 
 
