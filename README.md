@@ -1,6 +1,18 @@
 # MIDI_to_Motion
 Demo webpage: https://snowmint.github.io/Music-to-motion_generation_with_symbolic_surrogates/index.html
 
+<table class="table_rwd_4cols" width="100%" height="100%" cellspacing="30px">
+   <tr>
+    <td>[![Video Label](http://img.youtube.com/vi/sYFTO1VCMKs/0.jpg)](https://www.youtube.com/embed/sYFTO1VCMKs)<br><br>MSE-loss<br/>[Validation set] Elgar salut d'amour</a></td>
+    <td><iframe width="100%" height="250" style="border-radius: 30pt" src="https://www.youtube.com/embed/5Y48O8z1u-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>MSE-loss<br/>[Validation set] 雨夜花</a></td>
+  </tr>
+</table>
+<table class="table_rwd_4cols" width="100%" height="100%" cellspacing="30px">
+   <tr>
+    <td><iframe width="100%" height="250" style="border-radius: 30pt" src="https://www.youtube.com/embed/IcSr91uEw0k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>MSE-loss<br/>[Test set] BWV1001 Adagio</a></td>
+    <td><iframe width="100%" height="250" style="border-radius: 30pt" src="https://www.youtube.com/embed/Nj-ywHH0FKM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>MSE-loss<br/>[Test set] BWV1001 Adagio</a></td>
+  </tr>
+</table>
 Colab training: https://drive.google.com/file/d/1nPChmQX_tWrZpCSx0Wa2OsGraaggrl14/view?usp=sharing
 
 ## 1. data_preprocess_<...>.py 
