@@ -91,7 +91,7 @@ Original dataset: https://drive.google.com/drive/folders/1pSNXDOfcki7-Iw7w_Ws15l
 Executing the 'predict_draw.ipynb' file allows you to make predictions and generate videos using a pre-saved model (located in the 'model_save' directory). This stores the predicted data required for evaluation in the 'output_eval' folder. <br/>
 
 將儲存於 output_eval 內的 pkl 檔案複製到 test_metric 目錄下，test_metric 中有 output_eval 資料夾，其中細分為 MIDI, Audio 和 Both 的資料夾，將相對應的 pkl 檔案複製到相應的目錄，即可執行以下程式，進行 evaluation。 <br/>
-Copy the .pkl files stored in the 'output_eval' directory to the 'test_metric' directory. The 'test_metric' directory contains the 'MIDI,' 'Audio,' and 'Both' subdirectories. Copy the corresponding .pkl files to their respective directories, and you can then execute the following two commands to begin evaluations. <br/>
+Copy the .pkl files stored in the 'output_eval' directory to the 'test_metric' directory. The 'test_metric' directory contains the 'MIDI,' 'Audio,' and 'Both' subdirectories. Copy the corresponding .pkl files to their respective directories, and you can then execute the command below to begin evaluations. <br/>
 
 `python test.py`
 
