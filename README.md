@@ -20,6 +20,16 @@ https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/
 
 Colab training: https://drive.google.com/file/d/1nPChmQX_tWrZpCSx0Wa2OsGraaggrl14/view?usp=sharing
 
+## 0. set up environment
+
+`pip install -r requirement.txt`
+`pip install midi2audio`
+`pip install py-midi`
+`pip install ffmpeg-python`
+`sudo apt install ffmpeg` (conda install -c conda-forge ffmpeg)
+`sudo apt-get install fluidsynth`
+
+
 ## 1. data_preprocess_<...>.py 
 (原則上不用執行。除非有修改 code ，否則我已經運行過，並儲存成 pickle file ，下載連結在 step 5。) <br/>
 (There is no need for you to do it. Unless there are any customized code modifications you made, I have already run it and saved it as a pickle file. The download link can be found in step 5 below.)
