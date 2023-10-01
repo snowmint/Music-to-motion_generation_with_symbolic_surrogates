@@ -29,7 +29,7 @@ Colab prediction: https://colab.research.google.com/drive/1lXHWYrx2NjMudjsHTDror
 5. 生成的影片 mp4 檔案將出現在 colab 頁面左方檔案欄位，如下圖所示，雙擊影片檔案即可下載查看結果：
    ![生成出的mp4會在左方檔案夾當前目錄下顯示](https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/assets/7868828/11b51709-50a7-488a-9f8c-a103eb96c6fc)
 
-## ==========================================================
+## ========== 以下步驟為在本機實作才需執行 ==========
 ## 0. set up environment
 
 `pip install -r requirement.txt`
