@@ -24,7 +24,7 @@ Colab prediction: https://colab.research.google.com/drive/1lXHWYrx2NjMudjsHTDror
 1. 運行第一格程式下載需要的套件，這個部分偶爾會遇到例外情況導致最後在畫圖的時候出現 AttributeError: 'Path3DCollection' object has no attribute '_offset_zordered'，嘗試過先使用 !pip3 install matplotlib==3.7.3 再**重新啟動執行階段**，按下全部執行就可以正常使用。<br/>
 2. 需要先下載想要使用的模型檔案：https://drive.google.com/drive/folders/1w74s7XUKmm9xd5qLQS5smMEWApb9Ykic?usp=drive_link<br/>
    以及想要測試之樂曲的 mid 和 wav 檔案，可以以 BWV1001 做為測試：https://drive.google.com/drive/folders/1q6zQKzlsde77v2FfOYFHnci12tE6bdaW?usp=drive_link<br/>
-3. 在Colab 的當前目錄下建立新的資料夾 `no_anno_model_save` 以及 `test_file`，並將前一步驟下載的檔案(取需要的部分檔案即可減少等待時間)放置在相對應的資料夾下，如下圖所示。如果 no_anno_model_save 中放置了 audio 為輸入的訓練模型，則需要 test_file 資料夾下請放置 mid 和 wav 檔案。若欲使用自己額外的測試檔案， mid 檔案轉 wav 可以使用 apt install fluidsynth 或 musescore 等軟體進行轉檔。<br/>
+3. 在Colab 的當前目錄下建立新的資料夾 `no_anno_model_save` 以及 `test_file`，並將前一步驟下載的檔案(取需要的部分檔案即可減少等待時間)放置在相對應的資料夾下，如下圖所示。**test_file 資料夾下請確認有放置 mid 和 wav 檔案**。若欲使用自己額外的測試檔案， mid 檔案轉 wav 可以使用 apt install fluidsynth 或 musescore 等軟體進行轉檔。<br/>
    ![資料擺放位置](https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/assets/7868828/f6764b80-c679-45b0-ba5b-0bb6ef09d800)
 4. 目前測試繪製 400 frame 的影片需要 9 分鐘的時間，依想測試的模型數量等待影片生成的時間會延長，像是放了三個模型與一首樂曲就需等待 27 分鐘。盡量不要過長，以免 colab 中斷執行階段。<br/>
 5. 生成的影片 mp4 檔案將出現在 colab 頁面左方檔案欄位，如下圖所示，雙擊影片檔案即可下載查看結果：
