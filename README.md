@@ -19,7 +19,6 @@ https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/
 
 ## Colab demonstration
 Colab prediction: https://colab.research.google.com/drive/1lXHWYrx2NjMudjsHTDrorBGwBZTtJPw1
-https://drive.google.com/file/d/1lXHWYrx2NjMudjsHTDrorBGwBZTtJPw1/view?usp=sharing
 
 1. 運行第一格程式下載需要的套件，這個部分偶爾會遇到例外情況導致最後在畫圖的時候出現 AttributeError: 'Path3DCollection' object has no attribute '_offset_zordered'，嘗試過先使用 !pip3 install matplotlib==3.7.3 再重新啟動執行階段改為 !pip3 install matplotlib==3.6.3，按下全部執行就可以正常使用。<br/>
 2. 需要先下載想要使用的模型檔案：https://drive.google.com/drive/folders/1w74s7XUKmm9xd5qLQS5smMEWApb9Ykic?usp=drive_link<br/>
