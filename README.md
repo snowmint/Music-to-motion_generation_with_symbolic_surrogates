@@ -11,11 +11,12 @@ https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/
 
 [New-loss][Test set] BWV1001 Adagio
 
-https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/assets/7868828/5f50071e-4f12-49b3-84c8-bd5f8503ddd4
+https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/assets/7868828/90595460-af1a-457f-9c33-a25d0339280e
 
 [New-loss][Test set] BWV1001 Adagio
 
-https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/assets/7868828/dd959f5f-b68b-4c10-bd1e-5ea7f45c4ae2
+https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/assets/7868828/20dfbcfa-d0b4-4129-bca8-aa9fe1618479
+
 
 ## Colab demonstration
 Colab prediction: https://colab.research.google.com/drive/1lXHWYrx2NjMudjsHTDrorBGwBZTtJPw1
