@@ -23,6 +23,8 @@ Colab prediction: https://colab.research.google.com/drive/1lXHWYrx2NjMudjsHTDror
 1. Run the first cell of the program to download the required packages. Occasionally, this part may encounter exceptions, leading to an AttributeError: 'Path3DCollection' object has no attribute '_offset_zordered' error when plotting. I've tried using `!pip3 install matplotlib==3.7.3` first and then **restarting the runtime**. After pressing 'Run All,' it works appropriately. <br/>
 
 2. If you want the final generated video with your WAV audio file, you need to set the variable `video_with_wav` to `True`. Conversely, if you want to use a MIDI soundtrack in the output video, you should set it to `False`. <br/>
+![變數變更](https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/assets/7868828/2af9747f-3836-426f-a5d5-8c4118e7dc3d)
+
 
 3. Download the model files you need (You can start off by choosing one model first. The more models you add, the longer the waiting time): https://drive.google.com/drive/folders/1w74s7XUKmm9xd5qLQS5smMEWApb9Ykic?usp=drive_link <br/>
 And download  the MIDI and WAV files of the music you want to test. You can use BWV1001 as a sample test : https://drive.google.com/drive/folders/1q6zQKzlsde77v2FfOYFHnci12tE6bdaW?usp=drive_link <br/>
@@ -41,7 +43,8 @@ Colab prediction: https://colab.research.google.com/drive/1lXHWYrx2NjMudjsHTDror
 
 1. 運行第一格程式下載需要的套件，這個部分偶爾會遇到例外情況導致最後在畫圖的時候出現 AttributeError: 'Path3DCollection' object has no attribute '_offset_zordered'，嘗試過先使用 !pip3 install matplotlib==3.7.3 再**重新啟動執行階段**，按下全部執行就可以正常使用。<br/>
 
-2. 如果你想要最後生成的影片搭配你的 wav 音訊檔案，則需要將 `video_with_wav` 變數改為 `True`。反之若想使用 MIDI 來搭配輸出的影片則需改為 `False`。
+2. 如果你想要最後生成的影片搭配你的 wav 音訊檔案，則需要將 `video_with_wav` 變數改為 `True`。反之若想使用 MIDI 來搭配輸出的影片則需改為 `False`。 <br/>
+![變數變更](https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/assets/7868828/2af9747f-3836-426f-a5d5-8c4118e7dc3d)
 
 3. 需要先下載想要使用的模型檔案：https://drive.google.com/drive/folders/1w74s7XUKmm9xd5qLQS5smMEWApb9Ykic?usp=drive_link<br/>
    以及想要測試之樂曲的 mid 和 wav 檔案，可以以 BWV1001 做為測試：https://drive.google.com/drive/folders/1q6zQKzlsde77v2FfOYFHnci12tE6bdaW?usp=drive_link<br/>
