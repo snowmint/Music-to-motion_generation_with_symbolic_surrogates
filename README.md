@@ -17,8 +17,23 @@ https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/
 
 https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/assets/7868828/20dfbcfa-d0b4-4129-bca8-aa9fe1618479
 
+## Colab demonstration(English)
+Colab prediction: https://colab.research.google.com/drive/1lXHWYrx2NjMudjsHTDrorBGwBZTtJPw1
 
-## Colab demonstration
+1. Run the first cell of the program to download the required packages. Occasionally, this part may encounter exceptions, leading to an AttributeError: 'Path3DCollection' object has no attribute '_offset_zordered' error when plotting. I've tried using `!pip3 install matplotlib==3.7.3` first and then restarting the runtime. After pressing 'Run All,' it works appropriately. <br/>
+
+2. Download the model files you need (You can start off by choosing one model first. The more models you add, the longer the waiting time): https://drive.google.com/drive/folders/1w74s7XUKmm9xd5qLQS5smMEWApb9Ykic?usp=drive_link <br/>
+And download  the MIDI and WAV files of the music you want to test. You can use BWV1001 as a sample test : https://drive.google.com/drive/folders/1q6zQKzlsde77v2FfOYFHnci12tE6bdaW?usp=drive_link <br/>
+
+3. In the current Colab directory, running the first cell of the program will automatically create two new folders: `no_anno_model_save` and `test_file`. Please upload and place the files downloaded in the previous step (select the necessary files to reduce waiting time) in the corresponding folders. Put the model files in the `no_anno_model_save` folder, and audio files in the `test_file` folder as shown in the diagram below. Ensure that the `test_file` folder contains both MIDI and WAV files with consistent filenames. If you want to use your own additional test files, you can convert MIDI files to WAV using software like `apt install fluidsynth` or “MuseScore”. <br/>
+   ![資料擺放位置](https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/assets/7868828/f6764b80-c679-45b0-ba5b-0bb6ef09d800)
+
+4. Currently it takes 9 minutes to generate a video with 400 frames for testing. The waiting time for video generation will increase depending on the number of models being tested. For example, using three models and one piece of music would require a waiting time of about 27 minutes. Please try to keep the duration reasonable to avoid interruptions in the Colab runtime. <br/>
+5. The generated MP4 video file will appear in the file panel on the left-hand side of the Colab page, as shown in the diagram below. Double-click the video file to download and view the results: <br/>
+   ![生成出的mp4會在左方檔案夾當前目錄下顯示](https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/assets/7868828/11b51709-50a7-488a-9f8c-a103eb96c6fc)
+
+
+## Colab 範例(中文)
 Colab prediction: https://colab.research.google.com/drive/1lXHWYrx2NjMudjsHTDrorBGwBZTtJPw1
 
 1. 運行第一格程式下載需要的套件，這個部分偶爾會遇到例外情況導致最後在畫圖的時候出現 AttributeError: 'Path3DCollection' object has no attribute '_offset_zordered'，嘗試過先使用 !pip3 install matplotlib==3.7.3 再**重新啟動執行階段**，按下全部執行就可以正常使用。<br/>
