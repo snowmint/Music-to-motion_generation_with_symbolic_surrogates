@@ -46,7 +46,7 @@ Colab prediction: https://colab.research.google.com/drive/1lXHWYrx2NjMudjsHTDror
    ![生成出的mp4會在左方檔案夾當前目錄下顯示](https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/assets/7868828/11b51709-50a7-488a-9f8c-a103eb96c6fc)
 
 ## === The following steps need to be executed only for local implementation. ===
-## ========================= 以下步驟為在本機實作才需執行 =========================
+## ======= 以下步驟為在本機實作才需執行 =======
 ## 0. set up environment
 
 `pip install -r requirement.txt`<br/>
