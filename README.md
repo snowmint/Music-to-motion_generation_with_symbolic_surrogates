@@ -22,7 +22,7 @@ Colab prediction: https://colab.research.google.com/drive/1lXHWYrx2NjMudjsHTDror
 
 1. Run the first cell of the program to download the required packages. Occasionally, this part may encounter exceptions, leading to an AttributeError: 'Path3DCollection' object has no attribute '_offset_zordered' error when plotting. I've tried using `!pip3 install matplotlib==3.7.3` first and then **restarting the runtime**. After pressing 'Run All,' it works appropriately. <br/>
 
-2. If you want the final generated video to match your WAV audio file, you need to set the variable `video_with_wav` to `True`. Conversely, if you want to use MIDI to match the output video, you should set it to `False`. <br/>
+2. If you want the final generated video with your WAV audio file, you need to set the variable `video_with_wav` to `True`. Conversely, if you want to use a MIDI soundtrack in the output video, you should set it to `False`. <br/>
 
 3. Download the model files you need (You can start off by choosing one model first. The more models you add, the longer the waiting time): https://drive.google.com/drive/folders/1w74s7XUKmm9xd5qLQS5smMEWApb9Ykic?usp=drive_link <br/>
 And download  the MIDI and WAV files of the music you want to test. You can use BWV1001 as a sample test : https://drive.google.com/drive/folders/1q6zQKzlsde77v2FfOYFHnci12tE6bdaW?usp=drive_link <br/>
