@@ -22,14 +22,17 @@ Colab prediction: https://colab.research.google.com/drive/1lXHWYrx2NjMudjsHTDror
 
 1. Run the first cell of the program to download the required packages. Occasionally, this part may encounter exceptions, leading to an AttributeError: 'Path3DCollection' object has no attribute '_offset_zordered' error when plotting. I've tried using `!pip3 install matplotlib==3.7.3` first and then **restarting the runtime**. After pressing 'Run All,' it works appropriately. <br/>
 
-2. Download the model files you need (You can start off by choosing one model first. The more models you add, the longer the waiting time): https://drive.google.com/drive/folders/1w74s7XUKmm9xd5qLQS5smMEWApb9Ykic?usp=drive_link <br/>
+2. If you want the final generated video to match your WAV audio file, you need to set the variable `video_with_wav` to `True`. Conversely, if you want to use MIDI to match the output video, you should set it to `False`. <br/>
+
+3. Download the model files you need (You can start off by choosing one model first. The more models you add, the longer the waiting time): https://drive.google.com/drive/folders/1w74s7XUKmm9xd5qLQS5smMEWApb9Ykic?usp=drive_link <br/>
 And download  the MIDI and WAV files of the music you want to test. You can use BWV1001 as a sample test : https://drive.google.com/drive/folders/1q6zQKzlsde77v2FfOYFHnci12tE6bdaW?usp=drive_link <br/>
 
-3. In the current Colab directory, running the first cell of the program will automatically create two new folders: `no_anno_model_save` and `test_file`. Please upload and place the files downloaded in the previous step (select the necessary files to reduce waiting time) in the corresponding folders. Upload the model files into the `no_anno_model_save` folder, and audio files into the `test_file` folder as shown in the diagram below. (It may take a bit long time, make sure the files are uploaded completely before going to the next step.) **Ensure that the `test_file` folder contains both MIDI and WAV files with consistent filenames**. If you want to use your own additional test files, you can convert MIDI files to WAV using software like `apt install fluidsynth` or “MuseScore”. <br/>
+4. In the current Colab directory, running the first cell of the program will automatically create two new folders: `no_anno_model_save` and `test_file`. Please upload and place the files downloaded in the previous step (select the necessary files to reduce waiting time) in the corresponding folders. Upload the model files into the `no_anno_model_save` folder, and audio files into the `test_file` folder as shown in the diagram below. (It may take a bit long time, make sure the files are uploaded completely before going to the next step.) **Ensure that the `test_file` folder contains both MIDI and WAV files with consistent filenames**. If you want to use your own additional test files, you can convert MIDI files to WAV using software like `apt install fluidsynth` or “MuseScore”. <br/>
    ![資料擺放位置](https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/assets/7868828/f6764b80-c679-45b0-ba5b-0bb6ef09d800)
 
-4. Currently it takes 9 minutes to generate a video with 400 frames for testing. The waiting time for video generation will increase depending on the number of models being tested. For example, using three models and one piece of music would require a waiting time of about 27 minutes. Also, attempting to generate a video with 800 frames takes 33 minutes. Please try to keep the duration reasonable to avoid interruptions in the Colab runtime. <br/>
-5. The generated MP4 video file will appear in the file panel on the left-hand side of the Colab page, as shown in the diagram below. Double-click the video file to download and view the results: <br/>
+5. Currently it takes 9 minutes to generate a video with 400 frames for testing. The waiting time for video generation will increase depending on the number of models being tested. For example, using three models and one piece of music would require a waiting time of about 27 minutes. Also, attempting to generate a video with 800 frames takes 33 minutes. Please try to keep the duration reasonable to avoid interruptions in the Colab runtime. <br/>
+
+6. The generated MP4 video file will appear in the file panel on the left-hand side of the Colab page, as shown in the diagram below. Double-click the video file to download and view the results: <br/>
    ![生成出的mp4會在左方檔案夾當前目錄下顯示](https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/assets/7868828/11b51709-50a7-488a-9f8c-a103eb96c6fc)
 
 
@@ -37,12 +40,13 @@ And download  the MIDI and WAV files of the music you want to test. You can use 
 Colab prediction: https://colab.research.google.com/drive/1lXHWYrx2NjMudjsHTDrorBGwBZTtJPw1
 
 1. 運行第一格程式下載需要的套件，這個部分偶爾會遇到例外情況導致最後在畫圖的時候出現 AttributeError: 'Path3DCollection' object has no attribute '_offset_zordered'，嘗試過先使用 !pip3 install matplotlib==3.7.3 再**重新啟動執行階段**，按下全部執行就可以正常使用。<br/>
-2. 需要先下載想要使用的模型檔案：https://drive.google.com/drive/folders/1w74s7XUKmm9xd5qLQS5smMEWApb9Ykic?usp=drive_link<br/>
+2. 如果你想要最後生成的影片搭配你的 wav 音訊檔案，則需要將 `video_with_wav` 變數改為 `True`。反之若想使用 MIDI 來搭配輸出的影片則需改為 `False`。
+3. 需要先下載想要使用的模型檔案：https://drive.google.com/drive/folders/1w74s7XUKmm9xd5qLQS5smMEWApb9Ykic?usp=drive_link<br/>
    以及想要測試之樂曲的 mid 和 wav 檔案，可以以 BWV1001 做為測試：https://drive.google.com/drive/folders/1q6zQKzlsde77v2FfOYFHnci12tE6bdaW?usp=drive_link<br/>
-3. 在 Colab 的當前目錄下執行第一格程式將自動建立新的資料夾 `no_anno_model_save` 以及 `test_file`，請將前一步驟下載的檔案(取需要的部分檔案即可減少等待時間)上傳並放置在相對應的資料夾下，模型檔案放置在 no_anno_model_save，而音訊檔案放置在 test_file 資料下(上傳會花蠻多時間，請確認上傳完畢再進行下面的步驟)，如下圖所示。**test_file 資料夾下請確認有放置 mid 和 wav 檔案，且檔名需一致**。若欲使用自己額外的測試檔案， mid 檔案轉 wav 可以使用 apt install fluidsynth 或 musescore 等軟體進行轉檔。<br/>
+4. 在 Colab 的當前目錄下執行第一格程式將自動建立新的資料夾 `no_anno_model_save` 以及 `test_file`，請將前一步驟下載的檔案(取需要的部分檔案即可減少等待時間)上傳並放置在相對應的資料夾下，模型檔案放置在 no_anno_model_save，而音訊檔案放置在 test_file 資料下(上傳會花蠻多時間，請確認上傳完畢再進行下面的步驟)，如下圖所示。**test_file 資料夾下請確認有放置 mid 和 wav 檔案，且檔名需一致**。若欲使用自己額外的測試檔案， mid 檔案轉 wav 可以使用 apt install fluidsynth 或 musescore 等軟體進行轉檔。<br/>
    ![資料擺放位置](https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/assets/7868828/f6764b80-c679-45b0-ba5b-0bb6ef09d800)
-4. 目前測試繪製 400 frame 的一個影片需要 9 分鐘的時間，依想測試的模型數量等待影片生成的時間會延長，像是放了三個模型與一首樂曲就需等待 27 分鐘。也嘗試繪製 800 frame 的一個影片需要 33 分鐘的時間。盡量不要過長，以免 colab 中斷執行階段。<br/>
-5. 生成的影片 mp4 檔案將出現在 colab 頁面左方檔案欄位，如下圖所示，雙擊影片檔案即可下載查看結果：
+5. 目前測試繪製 400 frame 的一個影片需要 9 分鐘的時間，依想測試的模型數量等待影片生成的時間會延長，像是放了三個模型與一首樂曲就需等待 27 分鐘。也嘗試繪製 800 frame 的一個影片需要 33 分鐘的時間。盡量不要過長，以免 colab 中斷執行階段。<br/>
+6. 生成的影片 mp4 檔案將出現在 colab 頁面左方檔案欄位，如下圖所示，雙擊影片檔案即可下載查看結果：
    ![生成出的mp4會在左方檔案夾當前目錄下顯示](https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/assets/7868828/11b51709-50a7-488a-9f8c-a103eb96c6fc)
 
 ## === The following steps need to be executed only for local implementation. ===
