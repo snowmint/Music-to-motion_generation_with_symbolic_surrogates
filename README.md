@@ -1,4 +1,4 @@
-# MIDI_to_Motion
+# Music_to_Motion
 Demo webpage for more details: https://snowmint.github.io/Music-to-motion_generation_with_symbolic_surrogates/index.html
 
 [New-loss][Validation set] Elgar salut d'amour
