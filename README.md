@@ -23,7 +23,8 @@ Colab prediction: https://colab.research.google.com/drive/1lXHWYrx2NjMudjsHTDror
 1. Run the first cell of the program to download the required packages. Occasionally, this part may encounter exceptions, leading to an AttributeError: 'Path3DCollection' object has no attribute '_offset_zordered' error when plotting. I've tried using `!pip3 install matplotlib==3.7.3` first and then **restarting the runtime**. After pressing 'Run All,' it works appropriately. <br/>
 
 2. If you want the final generated video with your WAV audio file, you need to set the variable `video_with_wav` to `True`. Conversely, if you want to use a MIDI soundtrack in the output video, you should set it to `False`. <br/>
-![變數變更](https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/assets/7868828/2af9747f-3836-426f-a5d5-8c4118e7dc3d)
+If you want to change the number of frames in the generated video, you can modify the `number_of_output_frames` variable value. It's recommended not to exceed 800 frames (20 seconds) from 400 frames (10 seconds), as generating a video with 800 frames already takes 33 minutes. <br/>
+![變數變更](https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/assets/7868828/ced227e7-d4e4-41d1-86a6-b661e9a02582)
 
 
 3. Download the model files you need (You can start off by choosing one model first. The more models you add, the longer the waiting time): https://drive.google.com/drive/folders/1w74s7XUKmm9xd5qLQS5smMEWApb9Ykic?usp=drive_link <br/>
@@ -44,17 +45,19 @@ Colab prediction: https://colab.research.google.com/drive/1lXHWYrx2NjMudjsHTDror
 1. 運行第一格程式下載需要的套件，這個部分偶爾會遇到例外情況導致最後在畫圖的時候出現 AttributeError: 'Path3DCollection' object has no attribute '_offset_zordered'，嘗試過先使用 !pip3 install matplotlib==3.7.3 再**重新啟動執行階段**，按下全部執行就可以正常使用。<br/>
 
 2. 如果你想要最後生成的影片搭配你的 wav 音訊檔案，則需要將 `video_with_wav` 變數改為 `True`。反之若想使用 MIDI 來搭配輸出的影片則需改為 `False`。 <br/>
-![變數變更](https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/assets/7868828/2af9747f-3836-426f-a5d5-8c4118e7dc3d)
+如果你想要變更生成的影片 frames 數，可以改變 `number_of_output_frames` 變數值，建議 400 frames(10秒) 不要超過 800 frames(20秒)，因為  800 frames 的影片就已經需要 33 分鐘來繪製。 <br/>
+![變數變更](https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/assets/7868828/d4dc71f2-0fd9-4c45-b3e9-329b930a01aa)
 
-3. 需要先下載想要使用的模型檔案：https://drive.google.com/drive/folders/1w74s7XUKmm9xd5qLQS5smMEWApb9Ykic?usp=drive_link<br/>
+
+4. 需要先下載想要使用的模型檔案：https://drive.google.com/drive/folders/1w74s7XUKmm9xd5qLQS5smMEWApb9Ykic?usp=drive_link<br/>
    以及想要測試之樂曲的 mid 和 wav 檔案，可以以 BWV1001 做為測試：https://drive.google.com/drive/folders/1q6zQKzlsde77v2FfOYFHnci12tE6bdaW?usp=drive_link<br/>
 
-4. 在 Colab 的當前目錄下執行第一格程式將自動建立新的資料夾 `no_anno_model_save` 以及 `test_file`，請將前一步驟下載的檔案(取需要的部分檔案即可減少等待時間)上傳並放置在相對應的資料夾下，模型檔案放置在 no_anno_model_save，而音訊檔案放置在 test_file 資料下(上傳會花蠻多時間，請確認上傳完畢再進行下面的步驟)，如下圖所示。**test_file 資料夾下請確認有放置 mid 和 wav 檔案，且檔名需一致**。若欲使用自己額外的測試檔案， mid 檔案轉 wav 可以使用 apt install fluidsynth 或 musescore 等軟體進行轉檔。<br/>
+5. 在 Colab 的當前目錄下執行第一格程式將自動建立新的資料夾 `no_anno_model_save` 以及 `test_file`，請將前一步驟下載的檔案(取需要的部分檔案即可減少等待時間)上傳並放置在相對應的資料夾下，模型檔案放置在 no_anno_model_save，而音訊檔案放置在 test_file 資料下(上傳會花蠻多時間，請確認上傳完畢再進行下面的步驟)，如下圖所示。**test_file 資料夾下請確認有放置 mid 和 wav 檔案，且檔名需一致**。若欲使用自己額外的測試檔案， mid 檔案轉 wav 可以使用 apt install fluidsynth 或 musescore 等軟體進行轉檔。<br/>
    ![資料擺放位置](https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/assets/7868828/f6764b80-c679-45b0-ba5b-0bb6ef09d800)
 
-5. 目前測試繪製 400 frame 的一個影片需要 9 分鐘的時間，依想測試的模型數量等待影片生成的時間會延長，像是放了三個模型與一首樂曲就需等待 27 分鐘。也嘗試繪製 800 frame 的一個影片需要 33 分鐘的時間。盡量不要過長，以免 colab 中斷執行階段。<br/>
+6. 目前測試繪製 400 frame 的一個影片需要 9 分鐘的時間，依想測試的模型數量等待影片生成的時間會延長，像是放了三個模型與一首樂曲就需等待 27 分鐘。也嘗試繪製 800 frame 的一個影片需要 33 分鐘的時間。盡量不要過長，以免 colab 中斷執行階段。<br/>
 
-6. 生成的影片 mp4 檔案將出現在 colab 頁面左方檔案欄位，如下圖所示，雙擊影片檔案即可下載查看結果，**每次下載完結果影片後記得刪除 colab 上的檔案，相同樂曲生成出的影片會有相同的檔案名稱，導致新的輸出影片無法覆蓋過去的檔案**：
+7. 生成的影片 mp4 檔案將出現在 colab 頁面左方檔案欄位，如下圖所示，雙擊影片檔案即可下載查看結果，**每次下載完結果影片後記得刪除 colab 上的檔案，相同樂曲生成出的影片會有相同的檔案名稱，導致新的輸出影片無法覆蓋過去的檔案**：
    ![生成出的mp4會在左方檔案夾當前目錄下顯示](https://github.com/snowmint/Music-to-motion_generation_with_symbolic_surrogates/assets/7868828/11b51709-50a7-488a-9f8c-a103eb96c6fc)
 
 ## === The following steps need to be executed only for local implementation. ===
